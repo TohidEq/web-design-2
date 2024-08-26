@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 
 import { Locale, i18n } from "@/i18n.config";
 import Header from "@/components/Header";
+import { getDictionary } from "@/lib/dictionary";
 
 export const metadata: Metadata = {
   title: "DOT Game",
@@ -15,19 +16,21 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
+  const { nav } = await getDictionary(params.lang);
+
   return (
     <html lang={params.lang}>
       <body className={""}>
         {/* header hamooon navbare aghaye (Hamed Bahram)ye   [ https://github.com/HamedBahram/next-i18n ] */}
         <Header lang={params.lang} />
-        <Navbar />
+        <Navbar nav={nav} />
         {children}
       </body>
     </html>

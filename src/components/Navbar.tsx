@@ -8,10 +8,12 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { findFlagUrlByNationality } from "country-flags-svg";
 
-type Props = {};
+type Props = { nav: any };
 
-function Navbar({}: Props) {
+function Navbar({ nav }: Props) {
+  /*  NO NEED YET(HOVER IS FINE) *
   const [windowSize, setWindowSize] = useState([0, 0]);
+  // update windowSize when window resizes
   useLayoutEffect(() => {
     function updateSize() {
       setWindowSize([window.innerWidth, window.innerHeight]);
@@ -20,13 +22,16 @@ function Navbar({}: Props) {
     updateSize();
     return () => window.removeEventListener("resize", updateSize);
   }, []);
+  */
 
+  /* NO NEED YET(HOVER IS FINE)
   const [toggleLang, setToggleLang] = useState(false);
   const toggleLangHandler = (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     setToggleLang(!toggleLang);
   };
+  */
 
   const [toggleMenu, setToggleMenu] = useState(false);
   const toggleMenuHandler = (
@@ -43,6 +48,7 @@ function Navbar({}: Props) {
   return (
     <div className="navbar">
       navbar brooo
+      <div className="">{nav.title1}</div>
       <Image src={flagUrlEnglish} width={500} height={500} alt="france" />
     </div>
   );

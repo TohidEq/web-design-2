@@ -1,6 +1,18 @@
 {
   "nav": {
     "title1": "test fr 1",
-    "title2": "test fr 2"
+    "title2": "test fr 2",
+    "links": [
+      "jeu",
+      "DOT jeton",
+      "feuille de route",
+      "NFTS",
+      "Titans",
+      "Communauté",
+      "Esports",
+      "Livre blanc"
+    ],
+    "signup": "s'inscrire",
+    "connect_wallet": "Connecter le portefeuille"
   }
 }

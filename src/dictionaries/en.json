@@ -1,6 +1,18 @@
 {
   "nav": {
     "title1": "test en 1",
-    "title2": "test en 2"
+    "title2": "test en 2",
+    "links": [
+      "Game",
+      "DOT Token",
+      "RoadMap",
+      "NFTS",
+      "Titans",
+      "Community",
+      "Esports",
+      "Whitepaper"
+    ],
+    "signup": "Sign up",
+    "connect_wallet": "Connect wallet"
   }
 }
