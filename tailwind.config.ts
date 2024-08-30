@@ -12,6 +12,7 @@ const config: Config = {
         light: "#F5F5F5",
         grey: "#8C8C8C",
         dark: "#0D0D0D",
+        "dark-2": "#0F0A08",
         orange: "#FF5C00",
         "blue-light": "#00C9E0",
         "green-light": "#41EAD4",

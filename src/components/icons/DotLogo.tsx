@@ -5,8 +5,8 @@ type Props = { classNames: string };
 function DotLogo({ classNames }: Props) {
   return (
     <svg
-      width="99"
-      height="39"
+      width="0"
+      height="0"
       viewBox="0 0 99 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

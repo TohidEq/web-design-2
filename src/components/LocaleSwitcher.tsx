@@ -3,9 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { i18n } from "@/i18n.config";
+import { Locale, i18n } from "@/i18n.config";
+import { findFlagUrlByIso2Code } from "country-flags-svg";
 
-export default function LocaleSwitcher() {
+import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image";
+
+export default function LocaleSwitcher({ lang }: { lang: Locale }) {
+  const flagUrlEnglish = findFlagUrlByIso2Code("US");
+  const flagUrlFrench = findFlagUrlByIso2Code("FR");
+
+  const langsFlagsImageUrl = {
+    en: flagUrlEnglish,
+    fr: flagUrlFrench,
+  };
+
   const pathName = usePathname();
 
   const redirectedPathName = (locale: string) => {
@@ -16,6 +28,7 @@ export default function LocaleSwitcher() {
   };
 
   return (
+    /*
     <ul className="flex gap-x-3">
       {i18n.locales.map((locale) => {
         return (
@@ -30,5 +43,24 @@ export default function LocaleSwitcher() {
         );
       })}
     </ul>
+    */
+    <div className="locale-switcher">
+      <button className="current-lang item">
+        <div className="elements">
+          <span>{lang}</span>
+          <div className="img">
+            <Image
+              src={langsFlagsImageUrl[lang]}
+              width={0}
+              height={0}
+              alt={`${lang} flag`}
+            />
+          </div>
+          <div className="arrow">
+            <IoIosArrowDown className="svg-arrow" />
+          </div>
+        </div>
+      </button>
+    </div>
   );
 }

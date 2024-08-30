@@ -29,8 +29,8 @@ export default async function RootLayout({
     <html lang={params.lang}>
       <body className={""}>
         {/* header hamooon navbare aghaye (Hamed Bahram)ye   [ https://github.com/HamedBahram/next-i18n ] */}
-        <Header lang={params.lang} />
-        <Navbar nav={nav} />
+        {/* <Header lang={params.lang} /> */}
+        <Navbar nav={nav} lang={params.lang} />
         {children}
       </body>
     </html>
