@@ -1,5 +1,6 @@
 .navbar {
   @apply fixed w-full text-white 
+  transition-colors duration-200 
   pt-2 md:pt-3 
   px-2;
   .nav-container {
@@ -24,6 +25,7 @@
         @extend .text-3-sizing-1;
 
         .link-item {
+          @extend .btn-hover;
           @apply pr-4 xl:px-4;
         }
       }
@@ -38,7 +40,7 @@
           @apply transition-all duration-150;
         }
         .elements {
-          @apply flex items-center pl-2 rounded-md;
+          @apply flex items-center pl-2 rounded-md cursor-pointer;
           span {
             @apply block font-bold uppercase
             text-sm xl:text-base pr-1.5;
@@ -67,6 +69,7 @@
 
         &:hover {
           .elements {
+            @extend .btn-hover;
             .arrow {
               .svg-arrow {
                 @apply -scale-y-100;
@@ -92,6 +95,60 @@
         .menu-btn {
           .menu-icon {
             @apply w-6 h-fit;
+          }
+        }
+
+        .menu-mobile-items {
+          @apply absolute left-0 top-full bg-dark-2 w-full
+          text-center
+          transition-all duration-200 h-0
+          overflow-hidden 
+          opacity-0
+          grid content-start pb-20 gap-y-6 pt-6;
+
+          .links {
+            .link-item {
+              a {
+                @apply block font-bold uppercase text-xl py-2 
+                transition-all duration-200
+                hover:text-orange hover:drop-shadow-glow-btn-2-orange;
+              }
+            }
+          }
+          .special-link {
+            @apply block min-w-[190px] mx-auto text-base font-bold;
+            @extend .btn-2-orange;
+          }
+
+          .links-iconic {
+            @apply flex gap-x-6 mx-auto pt-5;
+            .link-item {
+              a {
+                svg {
+                  @apply w-7 h-7 transition-all duration-200 fill-grey;
+
+                  &:hover {
+                    @apply fill-orange drop-shadow-glow-btn-1-orange;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* menu mobile on mode */
+  }
+
+  &.mobile-menu-on {
+    @apply bg-dark-2 xl:bg-transparent;
+    .nav-container {
+      .menu {
+        .menu-mobile {
+          .menu-mobile-items {
+            @apply h-screen opacity-100 
+            xl:opacity-0 xl:h-0;
           }
         }
       }

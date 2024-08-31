@@ -47,7 +47,22 @@ body {
   @apply text-[10px] md:text-[12px];
 }
 
+.btn-hover {
+  @apply transition-all duration-200;
+  &:hover {
+    @apply opacity-65;
+  }
+}
+
 .btn-1 {
+  @extend .btn-hover;
   @apply border-white border-[1px] rounded-full
   px-6 py-1;
+}
+
+.btn-2-orange {
+  @extend .btn-hover;
+  @apply bg-orange rounded-full 
+  
+  px-5 py-3;
 }

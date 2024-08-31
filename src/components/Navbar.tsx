@@ -8,6 +8,14 @@ import DotLogo from "@/components/icons/DotLogo";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { HiOutlineXMark } from "react-icons/hi2";
 
+import {
+  FaTwitter,
+  FaTelegramPlane,
+  FaDiscord,
+  FaYoutube,
+} from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
+
 import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
 
@@ -49,8 +57,8 @@ function Navbar({ nav, lang }: Props) {
   };
 
   return (
-    <div className="navbar">
-      <div className="nav-container">
+    <div className={`navbar  ${toggleMenu ? "mobile-menu-on" : ""}`}>
+      <div className={`nav-container`}>
         <div className="logo">
           <DotLogo classNames="logo-svg" />
         </div>
@@ -76,6 +84,57 @@ function Navbar({ nav, lang }: Props) {
                 <RxHamburgerMenu className="menu-icon menu-id-close" />
               )}
             </button>
+
+            <div className="menu-mobile-items">
+              <ul className="links">
+                {nav.links.map((link: string, index: number) => (
+                  <li className="link-item" key={`key-${index}`}>
+                    <Link href={"#"}>{link}</Link>
+                  </li>
+                ))}
+              </ul>
+
+              <Link href={"#"} className="special-link">
+                {nav.signup}
+              </Link>
+
+              <ul className="links-iconic">
+                <li className="link-item">
+                  <Link href={"#"}>
+                    {" "}
+                    <FaTwitter />
+                  </Link>
+                </li>
+
+                <li className="link-item">
+                  <Link href={"#"}>
+                    {" "}
+                    <FaTelegramPlane />
+                  </Link>
+                </li>
+
+                <li className="link-item">
+                  <Link href={"#"}>
+                    {" "}
+                    <FaDiscord />
+                  </Link>
+                </li>
+
+                <li className="link-item">
+                  <Link href={"#"}>
+                    {" "}
+                    <PiInstagramLogoFill />
+                  </Link>
+                </li>
+
+                <li className="link-item">
+                  <Link href={"#"}>
+                    {" "}
+                    <FaYoutube />
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
