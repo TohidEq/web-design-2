@@ -45,7 +45,7 @@ export default function LocaleSwitcher({ lang }: { lang: Locale }) {
     </ul>
     */
     <div className="locale-switcher">
-      <button className="current-lang item">
+      <div className="current-lang item">
         <div className="elements">
           <span>{lang}</span>
           <div className="img">
@@ -60,7 +60,27 @@ export default function LocaleSwitcher({ lang }: { lang: Locale }) {
             <IoIosArrowDown className="svg-arrow" />
           </div>
         </div>
-      </button>
+        <div className="other-langs">
+          {i18n.locales.map((locale) => {
+            if (locale !== lang)
+              return (
+                <Link key={locale} href={redirectedPathName(locale)}>
+                  <div className="elements">
+                    <span>{locale}</span>
+                    <div className="img">
+                      <Image
+                        src={langsFlagsImageUrl[locale]}
+                        width={0}
+                        height={0}
+                        alt={`${locale} flag`}
+                      />
+                    </div>
+                  </div>
+                </Link>
+              );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

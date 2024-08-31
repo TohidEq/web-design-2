@@ -1007,12 +1007,29 @@ body{
       padding: 0.25rem;
     }
     .locale-switcher {
+      .item{
+        position: relative;
+      }
       .item {
+        &{
+          transition-property: all;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 150ms;
+        }
+        &{
+          transition-duration: 150ms;
+        }
         .elements{
           display: flex;
         }
         .elements{
           align-items: center;
+        }
+        .elements{
+          border-radius: 0.375rem;
+        }
+        .elements{
+          padding-left: 0.5rem;
         }
         .elements {
           span{
@@ -1074,6 +1091,46 @@ body{
             .svg-arrow{
               width: 10px;
             }
+          }
+        }
+        .other-langs{
+          visibility: hidden;
+        }
+        .other-langs{
+          position: absolute;
+        }
+        .other-langs{
+          width: 100%;
+        }
+        .other-langs{
+          padding-top: 1rem;
+        }
+        .other-langs {
+          .elements{
+            margin-top: 0.25rem;
+          }
+          .elements{
+            width: 95%;
+          }
+          .elements{
+            background-color: rgb(15 10 8 / 0.4);
+          }
+          .elements{
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+          }
+        }
+        &:hover {
+          .elements {
+            .arrow {
+              .svg-arrow{
+                --tw-scale-y: -1;
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+              }
+            }
+          }
+          .other-langs{
+            visibility: visible;
           }
         }
       }

@@ -31,9 +31,14 @@
 
     .locale-switcher {
       @apply p-1;
+
       .item {
+        @apply relative;
+        & {
+          @apply transition-all duration-150;
+        }
         .elements {
-          @apply flex items-center;
+          @apply flex items-center pl-2 rounded-md;
           span {
             @apply block font-bold uppercase
             text-sm xl:text-base pr-1.5;
@@ -50,6 +55,26 @@
             .svg-arrow {
               @apply w-[10px] h-[10px];
             }
+          }
+        }
+        .other-langs {
+          @apply absolute invisible w-full pt-4;
+          .elements {
+            @apply w-[95%]  mt-1 py-0.5
+            bg-dark-2/40;
+          }
+        }
+
+        &:hover {
+          .elements {
+            .arrow {
+              .svg-arrow {
+                @apply -scale-y-100;
+              }
+            }
+          }
+          .other-langs {
+            @apply visible;
           }
         }
       }
