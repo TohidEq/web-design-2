@@ -1097,6 +1097,9 @@ body{
           position: absolute;
         }
         .other-langs{
+          z-index: 30;
+        }
+        .other-langs{
           width: 100%;
         }
         .other-langs{
@@ -1117,7 +1120,7 @@ body{
             padding-bottom: 0.125rem;
           }
         }
-        &:hover {
+        &.show {
           .elements {
             @extend .btn-hover;
             .arrow {
@@ -1188,6 +1191,24 @@ body{
           }
           .menu-icon{
             width: 1.5rem;
+          }
+          .menu-icon{
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+          }
+          .menu-icon{
+            transition-duration: 150ms;
+          }
+          .menu-icon:hover{
+            --tw-scale-x: 1.1;
+            --tw-scale-y: 1.1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          }
+          .menu-icon:active{
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           }
         }
         .menu-mobile-items{

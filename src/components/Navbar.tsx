@@ -38,15 +38,6 @@ function Navbar({ nav, lang }: Props) {
   }, []);
   */
 
-  /* NO NEED YET(HOVER IS FINE)
-  const [toggleLang, setToggleLang] = useState(false);
-  const toggleLangHandler = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-    setToggleLang(!toggleLang);
-  };
-  */
-
   console.log("lang:", lang);
 
   const [toggleMenu, setToggleMenu] = useState(false);

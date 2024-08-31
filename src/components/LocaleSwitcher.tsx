@@ -8,6 +8,7 @@ import { findFlagUrlByIso2Code } from "country-flags-svg";
 
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function LocaleSwitcher({ lang }: { lang: Locale }) {
   const flagUrlEnglish = findFlagUrlByIso2Code("US");
@@ -27,9 +28,17 @@ export default function LocaleSwitcher({ lang }: { lang: Locale }) {
     return segments.join("/");
   };
 
+  const [toggleLang, setToggleLang] = useState(false);
+  const toggleLangHandler = () => {
+    setToggleLang(!toggleLang);
+  };
+
   return (
     <div className="locale-switcher">
-      <div className="current-lang item">
+      <div
+        className={`current-lang item ${toggleLang && "show"}`}
+        onClick={toggleLangHandler}
+      >
         <div className="elements">
           <span>{lang}</span>
           <div className="img">

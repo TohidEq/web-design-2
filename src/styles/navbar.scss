@@ -60,14 +60,14 @@
           }
         }
         .other-langs {
-          @apply absolute invisible w-full pt-4;
+          @apply absolute invisible w-full pt-4 z-30;
           .elements {
             @apply w-[95%]  mt-1 py-0.5
             bg-dark-2/40;
           }
         }
 
-        &:hover {
+        &.show {
           .elements {
             @extend .btn-hover;
             .arrow {
@@ -94,7 +94,7 @@
         @apply xl:hidden flex items-center;
         .menu-btn {
           .menu-icon {
-            @apply w-6 h-fit;
+            @apply w-6 h-fit transition-all duration-150 hover:scale-110 active:scale-100;
           }
         }
 
