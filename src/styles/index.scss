@@ -620,6 +620,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.outline{
+  outline-style: solid;
+}
+
 body{
   --tw-bg-opacity: 1;
   background-color: rgb(20 83 45 / var(--tw-bg-opacity));
@@ -1402,6 +1406,27 @@ body{
           }
         }
       }
+    }
+  }
+}
+
+.welcome{
+  height: 100vh;
+  background-size: cover;
+  background-position: 34% center;
+}
+
+@media (min-width: 1280px){
+  .welcome{
+    background-position: center;
+  }
+}
+
+.welcome {
+  .welcome-container {
+    .welcome-content {
+    }
+    .welcome-slides {
     }
   }
 }

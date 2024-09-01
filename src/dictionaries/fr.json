@@ -14,5 +14,33 @@
     ],
     "signup": "S'inscrire",
     "connect_wallet": "Connecter le portefeuille"
+  },
+  "welcome": {
+    "title": "Arène de bataille multijoueur Web3",
+    "sub-title": "L'avenir du jeu vidéo",
+    "text": "Plongez dans DOT - Defense of Titans, une arène de combat en ligne révolutionnaire, inspirée de l'épopée Dota 2.",
+    "btn": "Jouez gratuitement",
+    "slides": [
+      {
+        "title": "Personnages principaux",
+        "img": "/image/welcome/slide-1.png"
+      },
+      {
+        "title": "Regardez la bande annonce",
+        "img": "/image/welcome/slide-2.png"
+      },
+      {
+        "title": "Actualités principales",
+        "img": "/image/welcome/slide-3.png"
+      },
+      {
+        "title": "Personnages principaux",
+        "img": "/image/welcome/slide-1.png"
+      },
+      {
+        "title": "Regardez la bande annonce",
+        "img": "/image/welcome/slide-2.png"
+      }
+    ]
   }
 }

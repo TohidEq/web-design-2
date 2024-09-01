@@ -14,5 +14,33 @@
     ],
     "signup": "Sign up",
     "connect_wallet": "Connect wallet"
+  },
+  "welcome": {
+    "title": "Web 3 Multiplayer Battle Arena",
+    "sub-title": "The Future Of Gaming",
+    "text": "Immerse Yourself in DOT - Defense of Titans, a groundbreaking online battle arena, drawing inspiration from the epic Dota 2.",
+    "btn": "Play for free",
+    "slides": [
+      {
+        "title": "Top characters",
+        "img": "/image/welcome/slide-1.png"
+      },
+      {
+        "title": "Watch the trailer",
+        "img": "/image/welcome/slide-2.png"
+      },
+      {
+        "title": "Main news",
+        "img": "/image/welcome/slide-3.png"
+      },
+      {
+        "title": "Top characters",
+        "img": "/image/welcome/slide-1.png"
+      },
+      {
+        "title": "Watch the trailer",
+        "img": "/image/welcome/slide-2.png"
+      }
+    ]
   }
 }

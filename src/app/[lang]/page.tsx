@@ -1,11 +1,23 @@
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
+import Welcome from "./Welcome";
 
 export default async function Home({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
-  const { nav } = await getDictionary(lang);
-  return <main className="">{nav.title1}</main>;
+  const { welcome } = await getDictionary(lang);
+  return (
+    <div className="Home">
+      <Welcome welcome={welcome} />
+      <Welcome welcome={welcome} />
+      <Welcome welcome={welcome} />
+    </div>
+  );
 }
+
+/**
+>>  outline text:
+    -webkit-text-stroke: width color;
+**/

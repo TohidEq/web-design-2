@@ -20,7 +20,7 @@ import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type Props = {
-  nav: any;
+  nav: LangsDict["nav"];
   lang: Locale;
 };
 
