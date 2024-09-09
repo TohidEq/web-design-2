@@ -22,7 +22,7 @@ export default async function Welcome({ welcome }: Props) {
           </Link>
         </div>
       </div>
-      <div className="slides">slides here</div>
+      <div className="welcome-slides">slides here</div>
     </main>
   );
 }

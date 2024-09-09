@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
@@ -1423,10 +1425,176 @@ body{
 }
 
 .welcome {
+  .welcome-container{
+    display: grid;
+  }
+  .welcome-container{
+    height: 100vh;
+  }
+  .welcome-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .welcome-container{
+    align-content: center;
+  }
   .welcome-container {
+    .welcome-content{
+      width: 100%;
+    }
+    .welcome-content{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .welcome-content{
+      text-align: center;
+    }
+    @media (min-width: 1280px){
+      .welcome-content{
+        width: 100%;
+      }
+    }
+    @media (min-width: 1280px){
+      @media (min-width: 640px){
+        .welcome-content{
+          max-width: 640px;
+        }
+      }
+    }
+    @media (min-width: 1280px){
+      @media (min-width: 768px){
+        .welcome-content{
+          max-width: 768px;
+        }
+      }
+    }
+    @media (min-width: 1280px){
+      @media (min-width: 1024px){
+        .welcome-content{
+          max-width: 1024px;
+        }
+      }
+    }
+    @media (min-width: 1280px){
+      @media (min-width: 1280px){
+        .welcome-content{
+          max-width: 1280px;
+        }
+      }
+    }
+    @media (min-width: 1280px){
+      @media (min-width: 1536px){
+        .welcome-content{
+          max-width: 1536px;
+        }
+      }
+    }
+    @media (min-width: 1280px){
+      .welcome-content{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (min-width: 1280px){
+      .welcome-content{
+        text-align: left;
+      }
+    }
     .welcome-content {
+      .title {
+        @extend .title-2-sizing;
+      }
+      .title{
+        padding-bottom: 0.375rem;
+      }
+      .title{
+        font-weight: 700;
+      }
+      .title{
+        text-transform: uppercase;
+      }
+      @media (min-width: 768px){
+        .title{
+          padding-bottom: 1rem;
+        }
+      }
+      .sub-title {
+        @extend .title-3-sizing;
+      }
+      .sub-title{
+        display: inline-block;
+      }
+      .sub-title{
+        padding-bottom: 0.5rem;
+      }
+      .sub-title{
+        font-family: Londrina Outline, sans-serif;
+      }
+      .sub-title{
+        font-weight: 700;
+      }
+      .sub-title{
+        text-transform: uppercase;
+      }
+      .sub-title{
+        --tw-text-opacity: 1;
+        color: rgb(255 92 0 / var(--tw-text-opacity));
+      }
+      @media (min-width: 768px){
+        .sub-title{
+          padding-bottom: 1.5rem;
+        }
+      }
+      .sub-title {
+        /* outline with css but not looks good: */
+        /*
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ff5c00;
+        */
+      }
+      .text {
+        @extend .text-1-sizing;
+      }
+      .text{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text{
+        max-width: 500px;
+      }
+      .text{
+        padding-bottom: 2.75rem;
+      }
+      .text{
+        font-weight: 500;
+      }
+      @media (min-width: 1280px){
+        .text{
+          margin: 0px;
+        }
+      }
+      .btn {
+        @extend .btn-2-orange, .title-5-sizing;
+      }
+      .btn{
+        display: inline-block;
+      }
+      .btn{
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+      .btn{
+        min-width: 212px;
+      }
+      .btn{
+        text-align: center;
+      }
+      .btn{
+        font-weight: 500;
+      }
     }
     .welcome-slides {
     }
   }
 }
+
+/* 5 8 59*/

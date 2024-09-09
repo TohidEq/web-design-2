@@ -1,9 +1,41 @@
 .welcome {
   @apply h-screen bg-[34%_center] xl:bg-center bg-cover;
   .welcome-container {
+    @apply grid grid-cols-1 content-center h-screen;
+
     .welcome-content {
+      @apply text-center w-full
+      xl:container xl:mx-auto xl:text-left px-2;
+      .title {
+        @extend .title-2-sizing;
+        @apply font-bold 
+        uppercase
+        pb-1.5 md:pb-4;
+      }
+
+      .sub-title {
+        @extend .title-3-sizing;
+        @apply inline-block text-orange font-bold font-outlined
+        uppercase
+        pb-2 md:pb-6;
+        /* outline with css but not looks good: */
+        /*
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ff5c00;
+        */
+      }
+      .text {
+        @extend .text-1-sizing;
+        @apply max-w-[500px] mx-auto xl:m-0 font-medium pb-11;
+      }
+      .btn {
+        @extend .btn-2-orange, .title-5-sizing;
+        @apply inline-block text-center min-w-[212px] w-fit font-medium;
+      }
     }
     .welcome-slides {
     }
   }
 }
+
+/* 5 8 59*/

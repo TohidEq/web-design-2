@@ -37,6 +37,7 @@ const config: Config = {
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
+        outlined: ["Londrina Outline", "sans-serif"],
       },
     },
   },
