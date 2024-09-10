@@ -32,6 +32,7 @@ const config: Config = {
         glow: ["0px 0px 8px #D3D5FD"],
         glow2: ["0px 0px 8px #D3D5FD", "0px 0px 8px #D3D5FD"],
         "glow-btn-1": ["0px 2px 4px #ffffff"],
+        "glow-btn-0-orange": ["0px 0px 8px #FF5C00"],
         "glow-btn-1-orange": ["0px 0px 18px #FF5C00"],
         "glow-btn-2-orange": ["0px 0px 24px #FF5C00"],
       },

@@ -1,3 +1,4 @@
+import SlideShowImages from "@/components/SlideShowImages";
 import { getDictionary } from "@/lib/dictionary";
 import Link from "next/link";
 
@@ -22,7 +23,9 @@ export default async function Welcome({ welcome }: Props) {
           </Link>
         </div>
       </div>
-      <div className="welcome-slides">slides here</div>
+      <div className="welcome-slides">
+        <SlideShowImages items={welcome.slides} dots={false} arrows={true} />
+      </div>
     </main>
   );
 }

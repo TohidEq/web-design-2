@@ -1,0 +1,63 @@
+.slideshow {
+  @apply mx-0  max-w-[300px] relative;
+  .slideshow-slider {
+    @apply whitespace-nowrap transition-transform duration-1000;
+
+    .slide {
+      @apply inline-block w-full;
+      .slide-container {
+        @apply px-2.5 block;
+        .slide-contents {
+          .slide-image {
+            @apply h-[200px]  w-full transition-all duration-300 rounded-2xl bg-cover bg-center;
+          }
+          .slide-title {
+            @apply font-medium text-xl leading-loose transition-all duration-500;
+          }
+
+          &:hover {
+            .slide-image {
+              @apply drop-shadow-glow-btn-0-orange;
+            }
+            .slide-title {
+              @apply drop-shadow-glow;
+            }
+          }
+        }
+      }
+    }
+  }
+  .slideshow-dots {
+    @apply text-center;
+
+    .slideshow-dot {
+      @apply inline-block 
+      bg-light/50
+      cursor-pointer
+      rounded-full 
+      mt-1
+      mx-2 
+      w-5 h-5;
+
+      &.active {
+        @apply bg-orange;
+      }
+    }
+  }
+
+  .slideshow-arrows {
+    @apply absolute w-full bottom-full left-0 -translate-y-3;
+    .arrows {
+      @apply flex justify-center gap-x-2.5;
+      .arrow {
+        svg {
+          @apply w-6 h-6 fill-orange cursor-pointer transition-all duration-500 hover:scale-110 active:scale-95;
+        }
+        &.left {
+        }
+        &.right {
+        }
+      }
+    }
+  }
+}

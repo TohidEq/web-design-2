@@ -23,23 +23,28 @@
     "slides": [
       {
         "title": "Personnages principaux",
-        "img": "/image/welcome/slide-1.png"
+        "img": "/images/welcome/slide-1.png",
+        "url": "#"
       },
       {
         "title": "Regardez la bande annonce",
-        "img": "/image/welcome/slide-2.png"
+        "img": "/images/welcome/slide-2.png",
+        "url": "#"
       },
       {
         "title": "Actualités principales",
-        "img": "/image/welcome/slide-3.png"
+        "img": "/images/welcome/slide-3.png",
+        "url": "#"
       },
       {
         "title": "Personnages principaux",
-        "img": "/image/welcome/slide-1.png"
+        "img": "/images/welcome/slide-1.png",
+        "url": "#"
       },
       {
         "title": "Regardez la bande annonce",
-        "img": "/image/welcome/slide-2.png"
+        "img": "/images/welcome/slide-2.png",
+        "url": "#"
       }
     ]
   }

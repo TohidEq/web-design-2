@@ -23,23 +23,28 @@
     "slides": [
       {
         "title": "Top characters",
-        "img": "/image/welcome/slide-1.png"
+        "img": "/images/welcome/slide-1.png",
+        "url": "#"
       },
       {
         "title": "Watch the trailer",
-        "img": "/image/welcome/slide-2.png"
+        "img": "/images/welcome/slide-2.png",
+        "url": "#"
       },
       {
         "title": "Main news",
-        "img": "/image/welcome/slide-3.png"
+        "img": "/images/welcome/slide-3.png",
+        "url": "#"
       },
       {
         "title": "Top characters",
-        "img": "/image/welcome/slide-1.png"
+        "img": "/images/welcome/slide-1.png",
+        "url": "#"
       },
       {
         "title": "Watch the trailer",
-        "img": "/image/welcome/slide-2.png"
+        "img": "/images/welcome/slide-2.png",
+        "url": "#"
       }
     ]
   }

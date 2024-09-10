@@ -11,8 +11,6 @@ export default async function Home({
   return (
     <div className="Home">
       <Welcome welcome={welcome} />
-      <Welcome welcome={welcome} />
-      <Welcome welcome={welcome} />
     </div>
   );
 }

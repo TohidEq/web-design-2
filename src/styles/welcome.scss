@@ -1,14 +1,16 @@
 .welcome {
-  @apply h-screen bg-[34%_center] xl:bg-center bg-cover;
+  @apply bg-[34%_center] xl:bg-center bg-cover
+  grid grid-cols-1  min-h-screen  pt-24 content-center xl:content-end;
   .welcome-container {
-    @apply grid grid-cols-1 content-center h-screen;
-
     .welcome-content {
-      @apply text-center w-full
-      xl:container xl:mx-auto xl:text-left px-2;
+      @apply text-center w-full h-full
+      xl:container xl:mx-auto xl:text-left px-2
+      xl:pb-7;
       .title {
         @extend .title-2-sizing;
+
         @apply font-bold 
+        xl:max-w-[800px]
         uppercase
         pb-1.5 md:pb-4;
       }
@@ -17,6 +19,7 @@
         @extend .title-3-sizing;
         @apply inline-block text-orange font-bold font-outlined
         uppercase
+        
         pb-2 md:pb-6;
         /* outline with css but not looks good: */
         /*
@@ -26,14 +29,20 @@
       }
       .text {
         @extend .text-1-sizing;
-        @apply max-w-[500px] mx-auto xl:m-0 font-medium pb-11;
+        @apply max-w-[850px] mx-auto xl:m-0 font-medium pb-11;
       }
       .btn {
         @extend .btn-2-orange, .title-5-sizing;
         @apply inline-block text-center min-w-[212px] w-fit font-medium;
       }
     }
-    .welcome-slides {
+  }
+  .welcome-slides {
+    @apply pt-10 hidden xl:block
+    overflow-hidden
+    pb-10 2xl:pb-20;
+    .slideshow {
+      @apply mx-auto;
     }
   }
 }

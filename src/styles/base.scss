@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
 
 body {
-  @apply bg-green-900;
+  @apply bg-dark-2;
   * {
     @apply text-white font-quicksand;
   }
@@ -18,10 +18,10 @@ body {
   @apply text-5xl sm:text-6xl md:text-8xl;
 }
 .title-2-sizing {
-  @apply text-3xl sm:text-4xl md:text-5xl;
+  @apply text-3xl sm:text-4xl md:text-5xl xl:text-6xl;
 }
 .title-3-sizing {
-  @apply text-2xl sm:text-3xl md:text-4xl;
+  @apply text-2xl sm:text-3xl md:text-4xl xl:text-5xl;
 }
 .title-4-sizing {
   @apply text-xl sm:text-2xl md:text-3xl;
@@ -32,7 +32,7 @@ body {
 }
 
 .text-1-sizing {
-  @apply text-sm sm:text-base md:text-lg;
+  @apply text-sm sm:text-base md:text-lg xl:text-2xl;
 }
 
 .text-2-sizing {

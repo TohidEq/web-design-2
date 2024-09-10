@@ -12,6 +12,7 @@ type LangsDict = {
     slides: {
       title: string;
       img: string;
+      url: string;
     }[];
   };
 };
