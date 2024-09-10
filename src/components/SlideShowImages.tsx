@@ -53,10 +53,12 @@ function SlideShowImages({ items, dots, arrows }: Props) {
           <div key={`${item.title}-${index}`} className="slide ">
             <Link href={item.url} className="slide-container">
               <div className="slide-contents">
-                <div
-                  className="slide-image"
-                  style={{ backgroundImage: `url(${item.img})` }}
-                ></div>
+                <div className="slide-image">
+                  <div
+                    className="img"
+                    style={{ backgroundImage: `url(${item.img})` }}
+                  ></div>
+                </div>
                 <div className="slide-title">{item.title}</div>
               </div>
             </Link>
