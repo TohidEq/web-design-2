@@ -1,6 +1,39 @@
 .welcome {
   @apply bg-[34%_center] xl:bg-center bg-cover
+  relative z-10
   grid grid-cols-1  min-h-screen  pt-24 content-center xl:content-end;
+
+  .fire-particles {
+    @apply absolute -z-10
+    w-full overflow-hidden bottom-0 left-0;
+    .fire-particles-container {
+      @apply flex flex-nowrap justify-between;
+      .left {
+      }
+      .right {
+        @apply self-end;
+      }
+
+      .img {
+        @apply h-[112px] w-[270px]
+        xl:h-[274px] xl:w-[658px] 
+        bg-cover bg-center;
+      }
+      .img-fade-1 {
+        @apply opacity-50;
+      }
+      .img-fade-2 {
+        @apply opacity-25;
+      }
+      .img-reversed {
+        @apply -scale-100;
+      }
+      .mobile-hide {
+        @apply hidden xl:block;
+      }
+    }
+  }
+
   .welcome-container {
     .welcome-content {
       @apply text-center w-full h-full

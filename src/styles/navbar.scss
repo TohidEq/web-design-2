@@ -1,6 +1,6 @@
 .navbar {
   @apply fixed w-full text-white 
-  transition-colors duration-200 
+  transition-colors duration-200 z-30
   pt-2 md:pt-3 
   px-2;
   .nav-container {
@@ -35,12 +35,13 @@
       @apply p-1;
 
       .item {
-        @apply relative;
-        & {
-          @apply transition-all duration-150;
-        }
+        @apply relative
+        transition-all duration-150;
+
         .elements {
-          @apply flex items-center pl-2 rounded-md cursor-pointer;
+          @extend .btn-hover;
+          @apply drop-shadow-noglow flex items-center pl-2 rounded-md cursor-pointer transition-all duration-200;
+
           span {
             @apply block font-bold uppercase
             text-sm xl:text-base pr-1.5;
@@ -55,7 +56,7 @@
           .arrow {
             @apply pl-1.5;
             .svg-arrow {
-              @apply w-[10px] h-[10px];
+              @apply w-[10px] h-[10px] transition-all duration-200;
             }
           }
         }
@@ -68,8 +69,8 @@
         }
 
         &.show {
-          .elements {
-            @extend .btn-hover;
+          & > .elements {
+            @apply drop-shadow-glow0;
             .arrow {
               .svg-arrow {
                 @apply -scale-y-100;

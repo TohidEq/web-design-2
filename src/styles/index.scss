@@ -868,6 +868,7 @@ body{
 
 .navbar{
   position: fixed;
+  z-index: 30;
   width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1031,14 +1032,17 @@ body{
       .item{
         position: relative;
       }
+      .item{
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .item{
+        transition-duration: 150ms;
+      }
       .item {
-        &{
-          transition-property: all;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 150ms;
-        }
-        &{
-          transition-duration: 150ms;
+        .elements {
+          @extend .btn-hover
         }
         .elements{
           display: flex;
@@ -1054,6 +1058,18 @@ body{
         }
         .elements{
           padding-left: 0.5rem;
+        }
+        .elements{
+          --tw-drop-shadow: drop-shadow(0px 0px 0px #00000000);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+        .elements{
+          transition-property: all;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 150ms;
+        }
+        .elements{
+          transition-duration: 200ms;
         }
         .elements {
           span{
@@ -1115,6 +1131,14 @@ body{
             .svg-arrow{
               width: 10px;
             }
+            .svg-arrow{
+              transition-property: all;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 150ms;
+            }
+            .svg-arrow{
+              transition-duration: 200ms;
+            }
           }
         }
         .other-langs{
@@ -1148,8 +1172,11 @@ body{
           }
         }
         &.show {
-          .elements {
-            @extend .btn-hover;
+          & > .elements{
+            --tw-drop-shadow: drop-shadow(0px 0px 11px #D3D5FDa0);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          }
+          & > .elements {
             .arrow {
               .svg-arrow{
                 --tw-scale-y: -1;
@@ -1434,6 +1461,8 @@ body{
 }
 
 .welcome{
+  position: relative;
+  z-index: 10;
   display: grid;
   min-height: 100vh;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1451,6 +1480,83 @@ body{
 }
 
 .welcome {
+  .fire-particles{
+    position: absolute;
+  }
+  .fire-particles{
+    bottom: 0px;
+  }
+  .fire-particles{
+    left: 0px;
+  }
+  .fire-particles{
+    z-index: -10;
+  }
+  .fire-particles{
+    width: 100%;
+  }
+  .fire-particles{
+    overflow: hidden;
+  }
+  .fire-particles {
+    .fire-particles-container{
+      display: flex;
+    }
+    .fire-particles-container{
+      flex-wrap: nowrap;
+    }
+    .fire-particles-container{
+      justify-content: space-between;
+    }
+    .fire-particles-container {
+      .left {
+      }
+      .right{
+        align-self: flex-end;
+      }
+      .img{
+        height: 112px;
+      }
+      .img{
+        width: 270px;
+      }
+      .img{
+        background-size: cover;
+      }
+      .img{
+        background-position: center;
+      }
+      @media (min-width: 1280px){
+        .img{
+          height: 274px;
+        }
+      }
+      @media (min-width: 1280px){
+        .img{
+          width: 658px;
+        }
+      }
+      .img-fade-1{
+        opacity: 0.5;
+      }
+      .img-fade-2{
+        opacity: 0.25;
+      }
+      .img-reversed{
+        --tw-scale-x: -1;
+        --tw-scale-y: -1;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      }
+      .mobile-hide{
+        display: none;
+      }
+      @media (min-width: 1280px){
+        .mobile-hide{
+          display: block;
+        }
+      }
+    }
+  }
   .welcome-container {
     .welcome-content{
       height: 100%;

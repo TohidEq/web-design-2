@@ -12,6 +12,32 @@ export default async function Welcome({ welcome }: Props) {
       className="welcome"
       style={{ backgroundImage: `url(/images/welcome/welcome-bg.png)` }}
     >
+      <div className="fire-particles">
+        <div className="fire-particles-container">
+          <div className="left">
+            <div
+              className="img img-fade-2 mobile-hide"
+              style={{
+                backgroundImage: `url(/images/welcome/fire-particles-1.png)`,
+              }}
+            ></div>
+            <div
+              className="img"
+              style={{
+                backgroundImage: `url(/images/welcome/fire-particles-1.png)`,
+              }}
+            ></div>
+          </div>
+          <div className="right">
+            <div
+              className="img img-fade-1 img-reversed mobile-hide"
+              style={{
+                backgroundImage: `url(/images/welcome/fire-particles-1.png)`,
+              }}
+            ></div>
+          </div>
+        </div>
+      </div>
       <div className="welcome-container">
         <div className="welcome-content">
           <h2 className="title">{welcome.title}</h2>

@@ -29,7 +29,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       dropShadow: {
+        noglow: ["0px 0px 0px #00000000"],
         glow: ["0px 0px 8px #D3D5FD"],
+        glow0: ["0px 0px 11px #D3D5FDa0"],
         glow2: ["0px 0px 8px #D3D5FD", "0px 0px 8px #D3D5FD"],
         "glow-btn-1": ["0px 2px 4px #ffffff"],
         "glow-btn-0-orange": ["0px 0px 8px #FF5C00"],
