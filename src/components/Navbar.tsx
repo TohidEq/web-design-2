@@ -1,6 +1,5 @@
 "use client";
 import React, { useLayoutEffect, useState } from "react";
-import Image from "next/image";
 import { Locale } from "@/i18n.config";
 
 import DotLogo from "@/components/icons/DotLogo";

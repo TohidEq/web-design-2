@@ -15,4 +15,8 @@ type LangsDict = {
       url: string;
     }[];
   };
+  footer: {
+    copyright: string;
+    links: string[];
+  };
 };

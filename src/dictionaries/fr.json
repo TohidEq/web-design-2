@@ -47,5 +47,17 @@
         "url": "#"
       }
     ]
+  },
+  "footer": {
+    "copyright": "™ & © 2024 Riot Games, Inc. Tous droits réservés. Riot Games, League of Legends et PvP.net sont des marques commerciales ou des marques déposées.",
+    "links": [
+      "jeu",
+      "DOT jeton",
+      "feuille de route",
+      "NFTS",
+      "Titans",
+      "Communauté",
+      "Livre blanc"
+    ]
   }
 }

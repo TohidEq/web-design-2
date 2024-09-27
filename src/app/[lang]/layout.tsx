@@ -4,8 +4,8 @@ import "@/styles/index.scss";
 import Navbar from "@/components/Navbar";
 
 import { Locale, i18n } from "@/i18n.config";
-import Header from "@/components/Header";
 import { getDictionary } from "@/lib/dictionary";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "DOT Game",
@@ -23,15 +23,14 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  const { nav } = await getDictionary(params.lang);
+  const { nav, footer } = await getDictionary(params.lang);
 
   return (
     <html lang={params.lang}>
       <body className={""}>
-        {/* header hamooon navbare aghaye (Hamed Bahram)ye   [ https://github.com/HamedBahram/next-i18n ] */}
-        {/* <Header lang={params.lang} /> */}
         <Navbar nav={nav} lang={params.lang} />
         {children}
+        <Footer footer={footer} />
       </body>
     </html>
   );
