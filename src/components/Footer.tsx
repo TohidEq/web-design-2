@@ -44,7 +44,7 @@ function Footer({ footer }: Props) {
           {iconLinks.map((icon, index) => (
             <li key={index}>
               <Link href={"#"} className="icon-link link">
-                {icon} a
+                {icon}
               </Link>
             </li>
           ))}

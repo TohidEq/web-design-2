@@ -27,6 +27,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-orange-center":
+          "linear-gradient(90deg,hsla(17, 30%, 5%, 1) 2%,hsla(22, 99%, 45%, 1) 40%,hsla(22, 100%, 50%, 1) 50%,hsla(22, 99%, 45%, 1) 60%,hsla(17, 30%, 5%, 1) 98%)",
+        "gradient-orange-full":
+          "linear-gradient(90deg,hsla(22, 99%, 45%, 1) 2%,hsla(22, 99%, 45%, 1) 40%,hsla(22, 99%, 45%, 1) 50%,hsla(22, 99%, 45%, 1) 60%,hsla(22, 99%, 45%, 1) 98%)",
       },
       dropShadow: {
         noglow: ["0px 0px 0px #00000000"],

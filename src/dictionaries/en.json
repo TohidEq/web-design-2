@@ -51,6 +51,14 @@
 
   "footer": {
     "copyright": "™ & © 2024 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks or registered trademarks.",
-    "links": ["Game", "DOT Token", "RoadMap", "NFTS", "Community", "Whitepaper"]
+    "links": [
+      "Game",
+      "DOT Token",
+      "RoadMap",
+      "NFTS",
+      "Titans",
+      "Community",
+      "Whitepaper"
+    ]
   }
 }

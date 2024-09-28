@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+/*
+* quicksand : Stolzl
+* outlined  : outline font
+*/
 
 body {
   @apply bg-dark-2;
@@ -31,6 +35,9 @@ body {
   @apply text-lg sm:text-xl;
 }
 
+.text-0-sizing {
+  @apply text-base xl:text-lg;
+}
 .text-1-sizing {
   @apply text-sm sm:text-base md:text-lg xl:text-2xl;
 }
