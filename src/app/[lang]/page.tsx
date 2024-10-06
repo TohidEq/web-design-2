@@ -1,6 +1,7 @@
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
-import Welcome from "./Welcome";
+import Welcome from "@/components/Welcome";
+import InfiniteSlideShow from "@/components/InfiniteSlideShow";
 
 export default async function Home({
   params: { lang },
@@ -11,6 +12,9 @@ export default async function Home({
   return (
     <div className="Home">
       <Welcome welcome={welcome} />
+      <div className="test">
+        <InfiniteSlideShow />
+      </div>
     </div>
   );
 }

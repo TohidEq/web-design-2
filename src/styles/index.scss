@@ -617,6 +617,26 @@ video {
        column-gap: 2rem;
 }
 
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-green-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1988,6 +2008,76 @@ body{
         }
         &.right {
         }
+      }
+    }
+  }
+}
+
+.slider{
+  position: relative;
+  margin: auto;
+  display: grid;
+  height: 5rem;
+  width: 90%;
+  place-items: center;
+  overflow: hidden;
+  background-color: rgb(146 64 14 / 0.2);
+  @keyframes vertical-scroll {
+    0%{
+      --tw-translate-x: 0px;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    100% {
+      transform: translateX(calc(-40px * 9));
+    }
+  }
+  /*  w-10 = 40px */
+  .slide-track {
+    /*  w-10 = 40px  =>  40 * count(slides)*/
+  }
+  .slide-track{
+    display: flex;
+  }
+  .slide-track{
+    width: calc(40px * 18);
+  }
+  .slide-track {
+    animation: vertical-scroll 2s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+    .slide{
+      display: flex;
+    }
+    .slide{
+      height: 2.5rem;
+    }
+    .slide{
+      width: 2.5rem;
+    }
+    .slide{
+      align-items: center;
+    }
+    .slide{
+      background-color: rgb(255 255 255 / 0.1);
+    }
+    .slide{
+      padding: 1rem;
+    }
+    .slide{
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+    .slide{
+      transition-duration: 150ms;
+    }
+    .slide {
+      &:hover{
+        --tw-scale-x: 1.25;
+        --tw-scale-y: 1.25;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       }
     }
   }
