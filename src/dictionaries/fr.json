@@ -17,7 +17,7 @@
   },
   "welcome": {
     "title": "Arène de bataille multijoueur Web3",
-    "sub-title": "L'avenir du jeu vidéo",
+    "sub_title": "L'avenir du jeu vidéo",
     "text": "Plongez dans DOT - Defense of Titans, une arène de combat en ligne révolutionnaire, inspirée de l'épopée Dota 2.",
     "btn": "Jouez gratuitement",
     "slides": [
@@ -48,6 +48,100 @@
       }
     ]
   },
+
+  "pupular-heroes": {
+    "title": "Top personnages les plus populaires",
+    "text": "Trouvez un héros qui correspond à votre style de combat ! Découvrez des informations sur les héros et avancez vers la victoire !",
+    "watch_all": "Regardez tout",
+    "types": ["Archer", "Mêlée", "Soutien", "Tank", "Mage"],
+    "heroes": [
+      {
+        "name": "Ember Arch",
+        "type": 0,
+        "img": "/images/pupular-heroes-slides/hero-001.png",
+        "url": "#"
+      },
+      {
+        "name": "Phanto Assassin",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-002.png",
+        "url": "#"
+      },
+      {
+        "name": "Enchantress",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-003.png",
+        "url": "#"
+      },
+      {
+        "name": "Ember Spirit",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-004.png",
+        "url": "#"
+      },
+      {
+        "name": "Ghool",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-005.png",
+        "url": "#"
+      },
+      {
+        "name": "Puck",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-006.png",
+        "url": "#"
+      },
+      {
+        "name": "Invoker",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-007.png",
+        "url": "#"
+      },
+      {
+        "name": "Bristle Back",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-008.png",
+        "url": "#"
+      },
+      {
+        "name": "Wrath King",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-009.png",
+        "url": "#"
+      },
+      {
+        "name": "Doom",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-010.png",
+        "url": "#"
+      },
+      {
+        "name": "Oracle",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-011.png",
+        "url": "#"
+      },
+      {
+        "name": "Skywrath Mage",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-012.png",
+        "url": "#"
+      },
+      {
+        "name": "Dawn Breaker",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-013.png",
+        "url": "#"
+      },
+      {
+        "name": "Venom",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-014.png",
+        "url": "#"
+      }
+    ]
+  },
+
   "footer": {
     "copyright": "™ & © 2024 Riot Games, Inc. Tous droits réservés. Riot Games, League of Legends et PvP.net sont des marques commerciales ou des marques déposées.",
     "links": [

@@ -41,7 +41,7 @@ export default async function Welcome({ welcome }: Props) {
       <div className="welcome-container">
         <div className="welcome-content">
           <h2 className="title">{welcome.title}</h2>
-          <span className="sub-title">{welcome["sub-title"]}</span>
+          <span className="sub-title">{welcome.sub_title}</span>
           <p className="text">{welcome.text}</p>
 
           <Link href={"#"} className="btn">

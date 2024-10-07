@@ -1,12 +1,12 @@
 import React from "react";
-
+// GiPocketBow
 type Props = {};
 
 function InfiniteSlideShow({}: Props) {
   return (
     <div className="infinite-slideshow">
       <div className="slider">
-        <div className="slide-track">
+        <div className="slide-track ">
           <div className="slide">
             <div className="bg-blue-700">1</div>
           </div>

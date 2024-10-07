@@ -6,7 +6,7 @@ type LangsDict = {
   };
   welcome: {
     title: string;
-    "sub-title": string;
+    sub_title: string;
     text: string;
     btn: string;
     slides: {
@@ -15,8 +15,22 @@ type LangsDict = {
       url: string;
     }[];
   };
-  footer: {
-    copyright: string;
-    links: string[];
+
+  pupular_heroes: {
+    title: string;
+    text: string;
+    watch_all: string;
+    types: string[];
+    heroes: {
+      name: string;
+      type: number;
+      img: string;
+      url: string;
+    }[];
+
+    footer: {
+      copyright: string;
+      links: string[];
+    };
   };
 };

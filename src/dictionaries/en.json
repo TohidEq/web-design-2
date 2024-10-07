@@ -17,7 +17,7 @@
   },
   "welcome": {
     "title": "Web 3 Multiplayer Battle Arena",
-    "sub-title": "The Future Of Gaming",
+    "sub_title": "The Future Of Gaming",
     "text": "Immerse Yourself in DOT - Defense of Titans, a groundbreaking online battle arena, drawing inspiration from the epic Dota 2.",
     "btn": "Play for free",
     "slides": [
@@ -44,6 +44,99 @@
       {
         "title": "Watch the trailer",
         "img": "/images/welcome/slide-2.png",
+        "url": "#"
+      }
+    ]
+  },
+
+  "pupular-heroes": {
+    "title": "Top most popular characters",
+    "text": "Find a hero that suits your fighting style!Find out information about the heroes and go ahead to victory!",
+    "watch_all": "Watch all",
+    "types": ["Archer", "Melee", "Support", "Tank", "Mage"],
+    "heroes": [
+      {
+        "name": "Ember Arch",
+        "type": 0,
+        "img": "/images/pupular-heroes-slides/hero-001.png",
+        "url": "#"
+      },
+      {
+        "name": "Phanto Assassin",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-002.png",
+        "url": "#"
+      },
+      {
+        "name": "Enchantress",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-003.png",
+        "url": "#"
+      },
+      {
+        "name": "Ember Spirit",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-004.png",
+        "url": "#"
+      },
+      {
+        "name": "Ghool",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-005.png",
+        "url": "#"
+      },
+      {
+        "name": "Puck",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-006.png",
+        "url": "#"
+      },
+      {
+        "name": "Invoker",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-007.png",
+        "url": "#"
+      },
+      {
+        "name": "Bristle Back",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-008.png",
+        "url": "#"
+      },
+      {
+        "name": "Wrath King",
+        "type": 1,
+        "img": "/images/pupular-heroes-slides/hero-009.png",
+        "url": "#"
+      },
+      {
+        "name": "Doom",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-010.png",
+        "url": "#"
+      },
+      {
+        "name": "Oracle",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-011.png",
+        "url": "#"
+      },
+      {
+        "name": "Skywrath Mage",
+        "type": 4,
+        "img": "/images/pupular-heroes-slides/hero-012.png",
+        "url": "#"
+      },
+      {
+        "name": "Dawn Breaker",
+        "type": 3,
+        "img": "/images/pupular-heroes-slides/hero-013.png",
+        "url": "#"
+      },
+      {
+        "name": "Venom",
+        "type": 2,
+        "img": "/images/pupular-heroes-slides/hero-014.png",
         "url": "#"
       }
     ]
