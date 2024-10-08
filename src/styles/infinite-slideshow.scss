@@ -1,31 +1,45 @@
 .slider {
-  @apply h-20 m-auto relative 
-  w-[90%] bg-amber-800/20
-  grid place-items-center
-  overflow-hidden;
+  @apply m-auto relative 
+  container bg-amber-800/20
+  grid place-items-center py-10;
 
-  @keyframes vertical-scroll {
-    0% {
-      @apply translate-x-0;
+  @keyframes slideshow {
+    from {
+      transform: translateX(0);
     }
-    100% {
-      transform: translateX(calc(-40px * 9));
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  &.slideshow-animation {
+    @apply overflow-hidden flex-nowrap;
+    .slide-track {
+      animation: slideshow 4s linear infinite;
+      &.reversed {
+        animation-direction: reverse;
+      }
+    }
+  }
+
+  &:not(&.slideshow-animation) {
+    .slide-track {
+      @apply flex-wrap justify-evenly;
     }
   }
   /*  w-10 = 40px */
   .slide-track {
     /*  w-10 = 40px  =>  40 * count(slides)*/
-    @apply flex w-[calc(40px*18)];
-    animation: vertical-scroll 2s linear infinite;
+    @apply w-fit flex;
 
     &:hover {
       animation-play-state: paused;
     }
 
     .slide {
-      @apply w-10 h-10 
+      @apply h-20 
       transition-all duration-150
-      flex items-center p-4 bg-white/10;
+      items-center p-4 bg-white/10;
 
       &:hover {
         @apply scale-125;

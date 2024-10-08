@@ -1,69 +1,71 @@
+"use client";
 import React from "react";
-// GiPocketBow
-type Props = {};
 
-function InfiniteSlideShow({}: Props) {
+type Props = {
+  heroes: LangsDict["popular_heroes"]["heroes"];
+  show_all: boolean;
+  reverse_sliding: boolean;
+};
+
+// GiPocketBow archer
+//
+
+// TODO: reversed sliding CSSS
+
+function InfiniteSlideShow({ heroes, show_all, reverse_sliding }: Props) {
   return (
-    <div className="infinite-slideshow">
-      <div className="slider">
-        <div className="slide-track ">
-          <div className="slide">
-            <div className="bg-blue-700">1</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">2</div>
-          </div>
-          <div className="slide">
-            <div className="bg-green-700">3</div>
-          </div>
-          <div className="slide">
-            <div className="bg-blue-700">4</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">5</div>
-          </div>
-          <div className="slide">
-            <div className="bg-green-700">6</div>
-          </div>
-          <div className="slide">
-            <div className="bg-blue-700">7</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">8</div>
-          </div>
-          <div className="slide">
-            <div className="bg-yellow-700">9</div>
-          </div>
+    <div className={`slider ${!show_all && "slideshow-animation"} `}>
+      <div className={`slide-track ${reverse_sliding && "reversed"}`}>
+        <div className="slide w-40">
+          <div className="bg-yellow-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-gray-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-green-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-red-700">1</div>
+        </div>
 
-          {/* same slides */}
+        {/* same slide w-40s */}
 
-          <div className="slide">
-            <div className="bg-blue-700">1</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">2</div>
-          </div>
-          <div className="slide">
-            <div className="bg-green-700">3</div>
-          </div>
-          <div className="slide">
-            <div className="bg-blue-700">4</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">5</div>
-          </div>
-          <div className="slide">
-            <div className="bg-green-700">6</div>
-          </div>
-          <div className="slide">
-            <div className="bg-blue-700">7</div>
-          </div>
-          <div className="slide">
-            <div className="bg-red-700">8</div>
-          </div>
-          <div className="slide">
-            <div className="bg-yellow-700">9</div>
-          </div>
+        <div className="slide w-40">
+          <div className="bg-yellow-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-gray-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-green-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-blue-700">1</div>
+        </div>
+        <div className="slide w-40">
+          <div className="bg-red-700">1</div>
         </div>
       </div>
     </div>

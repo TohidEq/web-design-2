@@ -1,19 +1,19 @@
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import Welcome from "@/components/Welcome";
-import InfiniteSlideShow from "@/components/InfiniteSlideShow";
+import PopularHeroes from "@/components/PopularHeroes";
 
 export default async function Home({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
-  const { welcome } = await getDictionary(lang);
+  const { welcome, popular_heroes } = await getDictionary(lang);
   return (
     <div className="Home">
       <Welcome welcome={welcome} />
       <div className="test">
-        <InfiniteSlideShow />
+        <PopularHeroes popular_heroes={popular_heroes} />
       </div>
     </div>
   );

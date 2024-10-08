@@ -16,21 +16,15 @@ type LangsDict = {
     }[];
   };
 
-  pupular_heroes: {
+  popular_heroes: {
     title: string;
     text: string;
     watch_all: string;
     types: string[];
-    heroes: {
-      name: string;
-      type: number;
-      img: string;
-      url: string;
-    }[];
-
-    footer: {
-      copyright: string;
-      links: string[];
-    };
+    heroes: Hero[];
+  };
+  footer: {
+    copyright: string;
+    links: string[];
   };
 };

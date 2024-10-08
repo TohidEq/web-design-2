@@ -1,0 +1,30 @@
+.popular-heroes {
+  .popular-heroes-texts {
+    @apply text-center font-quicksand
+    py-5;
+
+    .title {
+      @apply font-bold max-w-[436px] xl:max-w-none
+      leading-snug
+      
+      pb-5 xl:pb-3
+      px-2 mx-auto;
+      @extend .title-2-sizing;
+    }
+    .text {
+      @apply max-w-[436px] xl:max-w-[550px]
+      leading-relaxed font-normal
+      pb-7 xl:pb-3
+      px-2 
+      mx-auto;
+      @extend .text-2-sizing;
+    }
+    .show-all-btn {
+      @apply min-w-[212px] font-bold;
+      @extend .text-0-sizing, .btn-2-orange;
+    }
+  }
+
+  .popular-heroes-slideshow {
+  }
+}

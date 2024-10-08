@@ -596,6 +596,14 @@ video {
   display: flex;
 }
 
+.w-20{
+  width: 5rem;
+}
+
+.w-40{
+  width: 10rem;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -630,6 +638,11 @@ video {
 .bg-red-700{
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-700{
@@ -1795,6 +1808,98 @@ body{
 
 /* 5 8 59*/
 
+.popular-heroes {
+  .popular-heroes-texts{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .popular-heroes-texts{
+    text-align: center;
+  }
+  .popular-heroes-texts{
+    font-family: Quicksand, sans-serif;
+  }
+  .popular-heroes-texts {
+    .title{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title{
+      max-width: 436px;
+    }
+    .title{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .title{
+      padding-bottom: 1.25rem;
+    }
+    .title{
+      font-weight: 700;
+    }
+    .title{
+      line-height: 1.375;
+    }
+    @media (min-width: 1280px){
+      .title{
+        max-width: none;
+      }
+    }
+    @media (min-width: 1280px){
+      .title{
+        padding-bottom: 0.75rem;
+      }
+    }
+    .title {
+      @extend .title-2-sizing;
+    }
+    .text{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text{
+      max-width: 436px;
+    }
+    .text{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .text{
+      padding-bottom: 1.75rem;
+    }
+    .text{
+      font-weight: 400;
+    }
+    .text{
+      line-height: 1.625;
+    }
+    @media (min-width: 1280px){
+      .text{
+        max-width: 550px;
+      }
+    }
+    @media (min-width: 1280px){
+      .text{
+        padding-bottom: 0.75rem;
+      }
+    }
+    .text {
+      @extend .text-2-sizing;
+    }
+    .show-all-btn{
+      min-width: 212px;
+    }
+    .show-all-btn{
+      font-weight: 700;
+    }
+    .show-all-btn {
+      @extend .text-0-sizing, .btn-2-orange;
+    }
+  }
+  .popular-heroes-slideshow {
+  }
+}
+
 .slideshow{
   position: relative;
   margin-left: 0px;
@@ -2014,22 +2119,76 @@ body{
 }
 
 .slider{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .slider{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .slider{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .slider{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .slider{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .slider{
+    max-width: 1536px;
+  }
+}
+
+.slider{
   position: relative;
   margin: auto;
   display: grid;
-  height: 5rem;
-  width: 90%;
   place-items: center;
-  overflow: hidden;
   background-color: rgb(146 64 14 / 0.2);
-  @keyframes vertical-scroll {
-    0%{
-      --tw-translate-x: 0px;
-      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @keyframes slideshow {
+    from {
+      transform: translateX(0);
     }
 
-    100% {
-      transform: translateX(calc(-40px * 9));
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  &.slideshow-animation{
+    flex-wrap: nowrap;
+  }
+  &.slideshow-animation{
+    overflow: hidden;
+  }
+  &.slideshow-animation {
+    .slide-track {
+      animation: slideshow 4s linear infinite;
+      &.reversed {
+        animation-direction: reverse;
+      }
+    }
+  }
+  &:not(&.slideshow-animation) {
+    .slide-track{
+      flex-wrap: wrap;
+    }
+    .slide-track{
+      justify-content: space-evenly;
     }
   }
   /*  w-10 = 40px */
@@ -2040,21 +2199,15 @@ body{
     display: flex;
   }
   .slide-track{
-    width: calc(40px * 18);
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .slide-track {
-    animation: vertical-scroll 2s linear infinite;
     &:hover {
       animation-play-state: paused;
     }
     .slide{
-      display: flex;
-    }
-    .slide{
-      height: 2.5rem;
-    }
-    .slide{
-      width: 2.5rem;
+      height: 5rem;
     }
     .slide{
       align-items: center;
