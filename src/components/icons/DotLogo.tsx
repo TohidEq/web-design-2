@@ -12,7 +12,7 @@ function DotLogo({ classNames }: Props) {
       xmlns="http://www.w3.org/2000/svg"
       className={`dot-logo ${classNames}`}
     >
-      <g clip-path="url(#clip0_143_904)">
+      <g clipPath="url(#clip0_143_904)">
         <path
           d="M10.1492 6.71055C10.1492 6.71055 10.6514 5.62204 10.3283 5.02763C9.28775 3.11371 6.33762 2.58157 6.22694 2.47029C6.11626 2.35874 8.18764 3.99743 8.18764 3.99743C8.18764 3.99743 8.80226 4.33407 9.51611 5.58372"
           fill="url(#paint0_linear_143_904)"
@@ -59,8 +59,8 @@ function DotLogo({ classNames }: Props) {
           y2="6.71055"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_143_904"
@@ -70,8 +70,8 @@ function DotLogo({ classNames }: Props) {
           y2="30.8718"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_143_904"
@@ -81,8 +81,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_143_904"
@@ -92,8 +92,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_143_904"
@@ -103,8 +103,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_143_904"
@@ -114,8 +114,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_143_904"
@@ -125,8 +125,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_143_904"
@@ -136,8 +136,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_143_904"
@@ -147,8 +147,8 @@ function DotLogo({ classNames }: Props) {
           y2="44.7957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.37" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.37" />
         </linearGradient>
         <clipPath id="clip0_143_904">
           <rect
