@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         light: "#F5F5F5",
         grey: "#8C8C8C",
+        "grey-2": "#222222",
         dark: "#0D0D0D",
         "dark-2": "#0F0A08",
         orange: "#FF5C00",
@@ -31,6 +32,8 @@ const config: Config = {
           "linear-gradient(90deg,hsla(17, 30%, 5%, 1) 2%,hsla(22, 99%, 45%, 1) 40%,hsla(22, 100%, 50%, 1) 50%,hsla(22, 99%, 45%, 1) 60%,hsla(17, 30%, 5%, 1) 98%)",
         "gradient-orange-full":
           "linear-gradient(90deg,hsla(22, 99%, 45%, 1) 2%,hsla(22, 99%, 45%, 1) 40%,hsla(22, 99%, 45%, 1) 50%,hsla(22, 99%, 45%, 1) 60%,hsla(22, 99%, 45%, 1) 98%)",
+        "gradient-dark-soft":
+          "linear-gradient(23.96deg, #000000 -14.07%, rgba(22, 19, 26, 0) 97.47%)",
       },
       dropShadow: {
         noglow: ["0px 0px 0px #00000000"],

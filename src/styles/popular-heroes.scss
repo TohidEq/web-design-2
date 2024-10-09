@@ -4,7 +4,7 @@
     py-5;
 
     .title {
-      @apply font-bold max-w-[436px] xl:max-w-none
+      @apply font-bold max-w-[436px] md:max-w-none
       leading-snug
       
       pb-5 xl:pb-3

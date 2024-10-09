@@ -58,85 +58,85 @@
       {
         "name": "Ember Arch",
         "type": 0,
-        "img": "/images/popular_heroes-slides/hero-001.png",
+        "img": "/images/popular-heroes-slides/hero-001.png",
         "url": "#"
       },
       {
         "name": "Phanto Assassin",
         "type": 1,
-        "img": "/images/popular_heroes-slides/hero-002.png",
+        "img": "/images/popular-heroes-slides/hero-002.png",
         "url": "#"
       },
       {
         "name": "Enchantress",
         "type": 2,
-        "img": "/images/popular_heroes-slides/hero-003.png",
+        "img": "/images/popular-heroes-slides/hero-003.png",
         "url": "#"
       },
       {
         "name": "Ember Spirit",
         "type": 1,
-        "img": "/images/popular_heroes-slides/hero-004.png",
+        "img": "/images/popular-heroes-slides/hero-004.png",
         "url": "#"
       },
       {
         "name": "Ghool",
         "type": 3,
-        "img": "/images/popular_heroes-slides/hero-005.png",
+        "img": "/images/popular-heroes-slides/hero-005.png",
         "url": "#"
       },
       {
         "name": "Puck",
         "type": 4,
-        "img": "/images/popular_heroes-slides/hero-006.png",
+        "img": "/images/popular-heroes-slides/hero-006.png",
         "url": "#"
       },
       {
         "name": "Invoker",
         "type": 4,
-        "img": "/images/popular_heroes-slides/hero-007.png",
+        "img": "/images/popular-heroes-slides/hero-007.png",
         "url": "#"
       },
       {
         "name": "Bristle Back",
         "type": 3,
-        "img": "/images/popular_heroes-slides/hero-008.png",
+        "img": "/images/popular-heroes-slides/hero-008.png",
         "url": "#"
       },
       {
         "name": "Wrath King",
         "type": 1,
-        "img": "/images/popular_heroes-slides/hero-009.png",
+        "img": "/images/popular-heroes-slides/hero-009.png",
         "url": "#"
       },
       {
         "name": "Doom",
         "type": 3,
-        "img": "/images/popular_heroes-slides/hero-010.png",
+        "img": "/images/popular-heroes-slides/hero-010.png",
         "url": "#"
       },
       {
         "name": "Oracle",
         "type": 2,
-        "img": "/images/popular_heroes-slides/hero-011.png",
+        "img": "/images/popular-heroes-slides/hero-011.png",
         "url": "#"
       },
       {
         "name": "Skywrath Mage",
         "type": 4,
-        "img": "/images/popular_heroes-slides/hero-012.png",
+        "img": "/images/popular-heroes-slides/hero-012.png",
         "url": "#"
       },
       {
         "name": "Dawn Breaker",
         "type": 3,
-        "img": "/images/popular_heroes-slides/hero-013.png",
+        "img": "/images/popular-heroes-slides/hero-013.png",
         "url": "#"
       },
       {
         "name": "Venom",
         "type": 2,
-        "img": "/images/popular_heroes-slides/hero-014.png",
+        "img": "/images/popular-heroes-slides/hero-014.png",
         "url": "#"
       }
     ]

@@ -1,72 +1,35 @@
 "use client";
 import React from "react";
+import CardImageTitle from "./cards/CardImageTitle";
 
 type Props = {
   heroes: LangsDict["popular_heroes"]["heroes"];
+  heroesTypes: LangsDict["popular_heroes"]["types"];
   show_all: boolean;
   reverse_sliding: boolean;
 };
 
-// GiPocketBow archer
-//
+function InfiniteSlideShow({
+  heroes,
+  heroesTypes,
+  show_all,
+  reverse_sliding,
+}: Props) {
+  const content = heroes.map((hero, key) => {
+    // generate random key
+    const randomKey = `${key}-${key + Math.random().toString(16).slice(2)}`;
 
-// TODO: reversed sliding CSSS
+    return (
+      <CardImageTitle key={randomKey} hero={hero} heroesTypes={heroesTypes} />
+    );
+  });
 
-function InfiniteSlideShow({ heroes, show_all, reverse_sliding }: Props) {
   return (
     <div className={`slider ${!show_all && "slideshow-animation"} `}>
       <div className={`slide-track ${reverse_sliding && "reversed"}`}>
-        <div className="slide w-40">
-          <div className="bg-yellow-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-gray-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-green-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-red-700">1</div>
-        </div>
-
-        {/* same slide w-40s */}
-
-        <div className="slide w-40">
-          <div className="bg-yellow-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-gray-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-green-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-blue-700">1</div>
-        </div>
-        <div className="slide w-40">
-          <div className="bg-red-700">1</div>
-        </div>
+        {content}
+        {/* same slide (if not want to show all) */}
+        {!show_all && content}
       </div>
     </div>
   );

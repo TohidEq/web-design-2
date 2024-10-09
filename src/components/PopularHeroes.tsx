@@ -29,15 +29,20 @@ function PopularHeroes({ popular_heroes }: Props) {
 
       <div className="popular-heroes-slideshow">
         <InfiniteSlideShow
+          heroes={popular_heroes.heroes}
+          heroesTypes={popular_heroes.types}
           show_all={showAll}
           reverse_sliding={false}
-          heroes={popular_heroes.heroes}
         />
-        <InfiniteSlideShow
-          show_all={showAll}
-          reverse_sliding={true}
-          heroes={popular_heroes.heroes}
-        />
+
+        {!showAll && (
+          <InfiniteSlideShow
+            heroes={popular_heroes.heroes}
+            heroesTypes={popular_heroes.types}
+            show_all={showAll}
+            reverse_sliding={true}
+          />
+        )}
       </div>
     </div>
   );

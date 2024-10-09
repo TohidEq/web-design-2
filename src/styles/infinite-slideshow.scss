@@ -1,7 +1,7 @@
 .slider {
   @apply m-auto relative 
-  container bg-amber-800/20
-  grid place-items-center py-10;
+  container 
+  grid place-items-center py-2.5;
 
   @keyframes slideshow {
     from {
@@ -13,9 +13,10 @@
   }
 
   &.slideshow-animation {
-    @apply overflow-hidden flex-nowrap;
+    @apply flex flex-nowrap overflow-hidden;
     .slide-track {
-      animation: slideshow 4s linear infinite;
+      animation: slideshow 25s linear infinite;
+
       &.reversed {
         animation-direction: reverse;
       }
@@ -24,7 +25,7 @@
 
   &:not(&.slideshow-animation) {
     .slide-track {
-      @apply flex-wrap justify-evenly;
+      @apply grid place-content-center grid-cols-2 md:grid-cols-3;
     }
   }
   /*  w-10 = 40px */
