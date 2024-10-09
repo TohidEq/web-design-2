@@ -2403,6 +2403,12 @@ body{
           position: relative;
         }
         .title{
+          display: block;
+        }
+        .title{
+          cursor: pointer;
+        }
+        .title{
           font-weight: 400;
         }
         .title{
@@ -2416,6 +2422,10 @@ body{
         }
         .title{
           transition-duration: 500ms;
+        }
+        .title:hover{
+          --tw-drop-shadow: drop-shadow(0px 2px 4px #ffffff);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
         }
         .type{
           position: relative;

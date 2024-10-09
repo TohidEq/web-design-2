@@ -23,7 +23,7 @@ function CardImageTitle({ hero, heroesTypes }: Props) {
   ];
   return (
     <div className="card-image-title">
-      <Link href={hero.url} className="card-container">
+      <div className="card-container">
         <div
           className="card-image"
           style={{ backgroundImage: `url(${hero.img})` }}
@@ -33,7 +33,9 @@ function CardImageTitle({ hero, heroesTypes }: Props) {
 
         <div className="card-title">
           <div className="card-title-container">
-            <div className="title">{hero.name}</div>
+            <Link href={hero.url} className="title">
+              {hero.name}
+            </Link>
             <div className="type">
               {/* SVG here */}
               {heroesTypesIcons[hero.type]}
@@ -41,7 +43,7 @@ function CardImageTitle({ hero, heroesTypes }: Props) {
             </div>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

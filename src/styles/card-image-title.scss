@@ -46,8 +46,10 @@
         md:ps-4 md:pb-2;
         .title {
           @extend .title-4-sizing-1;
-          @apply font-normal text-white  transition-all duration-500
-          relative;
+          @apply block font-normal text-white  transition-all duration-500
+          relative
+          cursor-pointer 
+          hover:drop-shadow-glow-btn-1;
         }
         .type {
           @apply flex items-center transition-all duration-1000 
