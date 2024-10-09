@@ -49,9 +49,9 @@ function Navbar({ nav, lang }: Props) {
   return (
     <div className={`navbar  ${toggleMenu ? "mobile-menu-on" : ""}`}>
       <div className={`nav-container`}>
-        <div className="logo">
+        <Link href={"/"} className="logo">
           <DotLogo classNames="logo-svg" />
-        </div>
+        </Link>
         <div className="links-desktop">
           <ul className="link-items">
             {nav.links.map((link: string, index: number) => (

@@ -1,8 +1,9 @@
 .navbar {
   @apply fixed w-full text-white 
-  transition-colors duration-200 z-30
+  z-30
   pt-2 md:pt-3 
   px-2;
+  /* transition-colors duration-200  */
   .nav-container {
     @apply container mx-auto h-full font-quicksand
     bg-dark-2/45 rounded-full
@@ -10,7 +11,7 @@
     pl-2 pr-3 xl:pl-5 min-h-[52px];
 
     .logo {
-      @apply w-full xl:w-auto;
+      @apply w-full xl:w-auto block;
       .logo-svg {
         @apply h-[26px] lg:h-7 w-fit;
       }
@@ -103,10 +104,12 @@
           @apply absolute left-0 bg-dark-2 w-full
           -top-full -translate-y-20
           text-center
-          transition-all duration-200 h-0
+          h-0
           overflow-hidden 
-          opacity-0
-          grid content-start pb-20 gap-y-6 pt-6;
+          opacity-0 
+          hidden 
+          content-start pb-20 gap-y-6 pt-6;
+          /* grid  transition-all duration-200 */
 
           .links {
             .link-item {
@@ -149,7 +152,7 @@
       .menu {
         .menu-mobile {
           .menu-mobile-items {
-            @apply h-screen opacity-100  top-full mt-20
+            @apply grid h-screen opacity-100  top-full mt-20
             xl:opacity-0 xl:h-0;
           }
         }
