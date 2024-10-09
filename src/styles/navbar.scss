@@ -100,7 +100,8 @@
         }
 
         .menu-mobile-items {
-          @apply absolute left-0 top-full bg-dark-2 w-full
+          @apply absolute left-0 bg-dark-2 w-full
+          -top-full -translate-y-20
           text-center
           transition-all duration-200 h-0
           overflow-hidden 
@@ -148,7 +149,7 @@
       .menu {
         .menu-mobile {
           .menu-mobile-items {
-            @apply h-screen opacity-100 
+            @apply h-screen opacity-100  top-full mt-20
             xl:opacity-0 xl:h-0;
           }
         }
