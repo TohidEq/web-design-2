@@ -25,7 +25,7 @@
 
   &:not(&.slideshow-animation) {
     .slide-track {
-      @apply grid place-content-center grid-cols-2 md:grid-cols-3;
+      @apply grid place-content-center grid-cols-2 sm:grid-cols-3 xl:grid-cols-4;
     }
   }
   /*  w-10 = 40px */

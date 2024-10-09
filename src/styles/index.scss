@@ -750,6 +750,25 @@ body{
   }
 }
 
+.title-4-sizing-1{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 640px){
+  .title-4-sizing-1{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px){
+  .title-4-sizing-1{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 .title-5-sizing{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1850,7 +1869,7 @@ body{
     .text{
       line-height: 1.625;
     }
-    @media (min-width: 1280px){
+    @media (min-width: 768px){
       .text{
         max-width: 550px;
       }
@@ -2172,9 +2191,14 @@ body{
     .slide-track{
       place-content: center;
     }
-    @media (min-width: 768px){
+    @media (min-width: 640px){
       .slide-track{
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 1280px){
+      .slide-track{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
     }
   }
@@ -2225,6 +2249,15 @@ body{
 
 .card-image-title{
   padding: 0.5rem;
+}
+
+@media (min-width: 1280px){
+  .card-image-title{
+    padding: 1rem;
+  }
+}
+
+.card-image-title {
   &:hover {
     .card-container{
       --tw-border-opacity: 1;
@@ -2237,6 +2270,16 @@ body{
     .card-container {
       &::after{
         opacity: 0.5;
+      }
+      @media (min-width: 768px){
+        &::after{
+          opacity: 0.75;
+        }
+      }
+      @media (min-width: 1280px){
+        &::after{
+          opacity: 1;
+        }
       }
       .card-image{
         --tw-scale-x: 1.1;
@@ -2286,6 +2329,26 @@ body{
   }
   .card-container{
     transition-duration: 500ms;
+  }
+  @media (min-width: 768px){
+    .card-container{
+      height: 288px;
+    }
+  }
+  @media (min-width: 768px){
+    .card-container{
+      width: 200px;
+    }
+  }
+  @media (min-width: 1536px){
+    .card-container{
+      height: 359px;
+    }
+  }
+  @media (min-width: 1536px){
+    .card-container{
+      width: 274px;
+    }
   }
   .card-container {
     &::after{
@@ -2351,6 +2414,9 @@ body{
       left: 6rem;
     }
     .card-title{
+      z-index: 20;
+    }
+    .card-title{
       width: 100%;
     }
     .card-title{
@@ -2374,15 +2440,25 @@ body{
       .card-title-container{
         padding-bottom: 0.25rem;
       }
+      @media (min-width: 768px){
+        .card-title-container{
+          padding-inline-start: 1rem;
+        }
+      }
+      @media (min-width: 768px){
+        .card-title-container{
+          padding-bottom: 0.5rem;
+        }
+      }
       .card-title-container {
         .title {
-          @extend .text-2-sizing;
+          @extend .title-4-sizing-1;
         }
         .title{
           position: relative;
         }
         .title{
-          font-weight: 700;
+          font-weight: 400;
         }
         .title{
           --tw-text-opacity: 1;
@@ -2426,14 +2502,24 @@ body{
           .icon{
             fill: #FF5C00;
           }
-          @media (min-width: 1024px){
+          @media (min-width: 768px){
             .icon{
-              height: 0.875rem;
+              height: 1rem;
             }
           }
-          @media (min-width: 1024px){
+          @media (min-width: 768px){
             .icon{
-              width: 0.875rem;
+              width: 1rem;
+            }
+          }
+          @media (min-width: 1280px){
+            .icon{
+              height: 1.25rem;
+            }
+          }
+          @media (min-width: 1280px){
+            .icon{
+              width: 1.25rem;
             }
           }
           .name{
@@ -2446,8 +2532,18 @@ body{
             --tw-text-opacity: 1;
             color: rgb(255 92 0 / var(--tw-text-opacity));
           }
+          @media (min-width: 768px){
+            .name{
+              padding-inline-start: 0.375rem;
+            }
+          }
+          @media (min-width: 1280px){
+            .name{
+              padding-inline-start: 0.5rem;
+            }
+          }
           .name {
-            @extend .text-3-sizing;
+            @extend .text-2-sizing;
           }
         }
       }

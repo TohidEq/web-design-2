@@ -1,11 +1,11 @@
 .card-image-title {
-  @apply p-2;
+  @apply p-2 xl:p-4;
   &:hover {
     .card-container {
       @apply border-orange drop-shadow-glow-btn-0-orange;
 
       &::after {
-        @apply opacity-50;
+        @apply opacity-50 md:opacity-75 xl:opacity-100;
       }
 
       .card-image {
@@ -25,7 +25,10 @@
     @apply relative
     rounded-2xl overflow-hidden
     border-[3px] border-grey-2 transition-all duration-500
-    h-[165px] w-[124px];
+
+    h-[165px] w-[124px]
+    md:h-[288px] md:w-[200px]
+    2xl:h-[359px] 2xl:w-[274px];
 
     &::after {
       @apply content-[""] transition-opacity duration-200 absolute w-full h-full left-0 top-0 bg-gradient-dark-soft opacity-0;
@@ -36,25 +39,29 @@
     }
 
     .card-title {
-      @apply absolute bottom-0 left-24 w-full transition-all duration-700 opacity-0;
+      @apply absolute z-20 bottom-0 left-24 w-full transition-all duration-700 opacity-0;
+
       .card-title-container {
-        @apply relative ps-2 pb-1;
+        @apply relative 
+        ps-2 pb-1
+        md:ps-4 md:pb-2;
         .title {
-          @extend .text-2-sizing;
-          @apply font-bold text-white  transition-all duration-500
+          @extend .title-4-sizing-1;
+          @apply font-normal text-white  transition-all duration-500
           relative;
         }
         .type {
-          @apply flex items-center transition-all duration-1000
+          @apply flex items-center transition-all duration-1000 
           relative left-10;
           .icon {
             @apply fill-orange 
             w-3 h-3
-            lg:w-3.5 lg:h-3.5;
+            md:w-4 md:h-4
+            xl:w-5 xl:h-5;
           }
           .name {
-            @apply ps-1 font-semibold text-orange;
-            @extend .text-3-sizing;
+            @apply ps-1 md:ps-1.5 xl:ps-2 font-semibold text-orange;
+            @extend .text-2-sizing;
           }
         }
       }

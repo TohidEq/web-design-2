@@ -12,7 +12,7 @@
       @extend .title-2-sizing;
     }
     .text {
-      @apply max-w-[436px] xl:max-w-[550px]
+      @apply max-w-[436px] md:max-w-[550px]
       leading-relaxed font-normal
       pb-7 xl:pb-3
       px-2 
