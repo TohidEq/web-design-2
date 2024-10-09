@@ -1,28 +1,27 @@
 .card-image-title {
   @apply p-2 xl:p-4;
-  &:hover {
-    .card-container {
-      @apply border-orange drop-shadow-glow-btn-0-orange;
 
-      &::after {
-        @apply opacity-50 md:opacity-75 xl:opacity-100;
-      }
+  .card-container:hover {
+    @apply border-orange drop-shadow-glow-btn-0-orange;
 
-      .card-image {
-        @apply scale-110;
-      }
+    &::after {
+      @apply opacity-50 md:opacity-75 xl:opacity-100;
+    }
 
-      .card-title {
-        @apply left-0 opacity-100;
-        .type {
-          @apply -translate-x-10;
-        }
+    .card-image {
+      @apply scale-110;
+    }
+
+    .card-title {
+      @apply left-0 opacity-100;
+      .type {
+        @apply -translate-x-10;
       }
     }
   }
 
   .card-container {
-    @apply relative
+    @apply relative block
     rounded-2xl overflow-hidden
     border-[3px] border-grey-2 transition-all duration-500
 

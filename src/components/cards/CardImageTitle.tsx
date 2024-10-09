@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   GiPocketBow,
@@ -22,7 +23,7 @@ function CardImageTitle({ hero, heroesTypes }: Props) {
   ];
   return (
     <div className="card-image-title">
-      <div className="card-container">
+      <Link href={hero.url} className="card-container">
         <div
           className="card-image"
           style={{ backgroundImage: `url(${hero.img})` }}
@@ -40,7 +41,7 @@ function CardImageTitle({ hero, heroesTypes }: Props) {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
