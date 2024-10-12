@@ -141,6 +141,14 @@
       }
     ]
   },
+  "trailer_video": {
+    "url": "/videos/Dota2.mp4",
+    "thumbnail": "/images/dota2_video_preview.png",
+    "title": {
+      "left": "Watch",
+      "right": "trailer"
+    }
+  },
 
   "footer": {
     "copyright": "™ & © 2024 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks or registered trademarks.",

@@ -23,6 +23,15 @@ type LangsDict = {
     types: string[];
     heroes: Hero[];
   };
+
+  trailer_video: {
+    url: string;
+    thumbnail: string;
+    title: {
+      left: string;
+      right: string;
+    };
+  };
   footer: {
     copyright: string;
     links: string[];

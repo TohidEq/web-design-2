@@ -9,16 +9,12 @@ export default async function Home({
 }: {
   params: { lang: Locale };
 }) {
-  const { welcome, popular_heroes } = await getDictionary(lang);
+  const { welcome, popular_heroes, trailer_video } = await getDictionary(lang);
   return (
     <div className="Home">
       <Welcome welcome={welcome} />
       <PopularHeroes popular_heroes={popular_heroes} />
-      <VideoPlayer
-        videoUrl="/videos/Dota2.mp4"
-        thumbnailUrl="/images/dota2_video_preview.png"
-        title="Test"
-      />
+      <VideoPlayer trailerVideo={trailer_video} />
     </div>
   );
 }

@@ -1,19 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-import {
-  FaPlay,
-  FaPause,
-  FaBackward,
-  FaForward,
-  FaVolumeUp,
-  FaVolumeMute,
-} from "react-icons/fa";
 import VideoPlayerControls from "./VideoPlayerControls";
 
-type Props = { videoUrl: string; thumbnailUrl: string; title: string };
+type Props = { trailerVideo: LangsDict["trailer_video"] };
 
-function VideoPlayer({ videoUrl, thumbnailUrl, title }: Props) {
+function VideoPlayer({ trailerVideo }: Props) {
   const [videoProgress, setVideoProgress] = useState<number>(0);
   const [videoDuration, setVideoDuration] = useState<number>();
   const [isPaused, setIsPaused] = useState(true);
@@ -31,6 +23,12 @@ function VideoPlayer({ videoUrl, thumbnailUrl, title }: Props) {
     const currentTime = videoRef.current?.currentTime;
     if (videoDuration != null && currentTime != null) {
       let loadingTimeout = setTimeout(() => {
+        if (videoProgress == 1) {
+          setVideoProgress(-0.000001);
+          setVideoDuration(0);
+          setIsPaused(true);
+          videoRef.current?.pause();
+        }
         if (videoProgress == currentTime / videoDuration) {
           setVideoProgress((prev) => prev + 0.000001);
         } else {
@@ -52,21 +50,33 @@ function VideoPlayer({ videoUrl, thumbnailUrl, title }: Props) {
     }
   };
 
+  const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
   return (
     <div className="video-player">
-      <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-xl overflow-hidden">
-        <div className="absolute top-4 right-4 z-10">
+      <div className={`video-player-container `}>
+        <div
+          className={`controller-container ${!isPaused && "run"} ${
+            videoProgress > 0.03 && "played"
+          }`}
+        >
+          <div className="title title-left">{trailerVideo.title.left}</div>
           <VideoPlayerControls
+            size={50}
+            width={2}
             progress={videoProgress}
             isPaused={isPaused}
             onPlayPause={togglePlayPause}
           />
+          <div className="title title-right">{trailerVideo.title.right}</div>
         </div>
+
         <video
-          className="w-full"
+          className="video"
           ref={videoRef}
-          src={videoUrl}
-          poster={thumbnailUrl}
+          src={trailerVideo.url}
+          poster={trailerVideo.thumbnail}
+          onClick={() => togglePlayPause()}
         ></video>
       </div>
     </div>

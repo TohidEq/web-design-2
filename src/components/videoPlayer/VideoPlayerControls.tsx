@@ -1,13 +1,6 @@
 import React from "react";
 
-import {
-  FaPlay,
-  FaPause,
-  FaBackward,
-  FaForward,
-  FaVolumeUp,
-  FaVolumeMute,
-} from "react-icons/fa";
+import { FaPlay, FaPause } from "react-icons/fa";
 
 interface VideoPlayerControlsProps {
   progress: number;
@@ -30,16 +23,13 @@ const VideoPlayerControls: React.FC<VideoPlayerControlsProps> = ({
   const dashOffset = dashArray * (1 - progress);
 
   return (
-    <div className="relative flex justify-center items-center">
-      <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
-        <circle
-          cx={center}
-          cy={center}
-          r={radius}
-          fill="transparent"
-          stroke="#aaaaaa"
-          strokeWidth={width}
-        />
+    <div className="video-controller">
+      <svg
+        className="progressbar"
+        width={size}
+        height={size}
+        style={{ transform: "rotate(-90deg)" }}
+      >
         <circle
           cx={center}
           cy={center}
@@ -47,17 +37,23 @@ const VideoPlayerControls: React.FC<VideoPlayerControlsProps> = ({
           fill="transparent"
           stroke="#ffffff"
           strokeWidth={width}
+        />
+        <circle
+          cx={center}
+          cy={center}
+          r={radius}
+          fill="transparent"
+          stroke={"#FF5C00"}
+          strokeWidth={isPaused ? width + 1 : width + 1.5}
           strokeDasharray={dashArray}
           strokeDashoffset={dashOffset}
           strokeLinecap="round"
         />
       </svg>
-      <div className="absolute">
-        <button
-          className="group cursor-pointer flex justify-center items-center"
-          onClick={onPlayPause}
-        >
-          <div className=" fill-white group-hover:fill-[#aaaaaa] transition-colors duration-200 ease-in-out">
+
+      <div className="button-container">
+        <button onClick={onPlayPause}>
+          <div className="svg-container">
             {isPaused ? <FaPlay /> : <FaPause />}
           </div>
         </button>

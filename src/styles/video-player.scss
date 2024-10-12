@@ -1,0 +1,98 @@
+.video-player {
+  @apply relative w-[98%] mx-auto overflow-hidden;
+  &::before {
+    @apply content-[""] absolute h-full w-[6%] left-0 top-0 
+    bg-gradient-to-r from-dark-2 to-transparent
+    z-10;
+  }
+  &::after {
+    @apply content-[""] absolute h-full w-[6%] right-0 top-0 z-10
+    bg-gradient-to-l from-dark-2 to-transparent;
+  }
+
+  .video-player-container {
+    @apply relative w-full    overflow-hidden;
+    &::before {
+      @apply content-[""] absolute w-full h-[10%] left-0 top-0 bg-gradient-to-b from-dark-2 to-transparent;
+    }
+    &::after {
+      @apply content-[""] absolute w-full h-[10%] left-0 bottom-0
+      bg-gradient-to-t from-dark-2 to-transparent;
+    }
+
+    .controller-container {
+      @apply absolute 
+      transition-opacity duration-200
+      flex items-center
+      top-1/2 left-1/2 z-10 
+      -translate-x-1/2 
+      -translate-y-1/2
+      
+      sm:scale-110 md:scale-125 lg:scale-150 xl:scale-[200%] 2xl:scale-[225%];
+
+      .title {
+        /* using SCALE(in controller container) instead of @extend .title-3-sizing; */
+        @apply absolute w-fit
+        transition-opacity duration-700 px-2
+        font-bold
+        text-white
+        
+        text-3xl drop-shadow-[0_4px_4px_#0F0A0860];
+
+        &.title-left {
+          @apply right-full;
+        }
+        &.title-right {
+          @apply left-full;
+        }
+      }
+
+      &.played {
+        .title {
+          @apply opacity-0 hidden;
+        }
+      }
+
+      &.run {
+        @apply opacity-0 duration-700;
+        .title {
+          @apply opacity-0;
+        }
+        .video-controller .button-container {
+        }
+      }
+
+      .video-controller {
+        @apply relative flex justify-center items-center
+        transition-all duration-700;
+        &:hover {
+          @apply drop-shadow-glow-btn-0-orange;
+        }
+        svg.progressbar {
+          @apply w-full h-full;
+          &,
+          & * {
+            @apply duration-700 transition-all;
+          }
+        }
+        .button-container {
+          @apply absolute w-full h-full;
+          button {
+            @apply relative w-full h-full transition-all duration-500;
+
+            .svg-container {
+              @apply cursor-pointer w-full h-full flex justify-center items-center;
+              svg {
+                @apply fill-white transition-all duration-700 self-center  transition-colors duration-200 ease-in-out;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .video {
+      @apply w-full;
+    }
+  }
+}

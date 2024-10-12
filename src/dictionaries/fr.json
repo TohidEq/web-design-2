@@ -142,6 +142,15 @@
     ]
   },
 
+  "trailer_video": {
+    "url": "/videos/Dota2.mp4",
+    "thumbnail": "/images/dota2_video_preview.png",
+    "title": {
+      "left": "Regarder",
+      "right": "remorque"
+    }
+  },
+
   "footer": {
     "copyright": "™ & © 2024 Riot Games, Inc. Tous droits réservés. Riot Games, League of Legends et PvP.net sont des marques commerciales ou des marques déposées.",
     "links": [
