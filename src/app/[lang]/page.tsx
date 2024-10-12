@@ -2,6 +2,7 @@ import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import Welcome from "@/components/Welcome";
 import PopularHeroes from "@/components/PopularHeroes";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 export default async function Home({
   params: { lang },
@@ -12,9 +13,12 @@ export default async function Home({
   return (
     <div className="Home">
       <Welcome welcome={welcome} />
-      <div className="test">
-        <PopularHeroes popular_heroes={popular_heroes} />
-      </div>
+      <PopularHeroes popular_heroes={popular_heroes} />
+      <VideoPlayer
+        videoUrl="/videos/Dota2.mp4"
+        thumbnailUrl="/images/dota2_video_preview.png"
+        title="Test"
+      />
     </div>
   );
 }
