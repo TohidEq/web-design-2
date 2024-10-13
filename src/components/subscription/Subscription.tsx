@@ -1,5 +1,7 @@
 import React from "react";
 import ImagesInOne from "@/components/subscription/ImagesInOne";
+import Link from "next/link";
+import { BsTwitterX } from "react-icons/bs";
 
 type Props = {
   subscription: LangsDict["subscription"];
@@ -7,10 +9,16 @@ type Props = {
 
 function Subscription({ subscription: sub }: Props) {
   return (
-    <div>
-      {sub.title}
+    <div className="subscription">
+      <div className="subs-texts">
+        <p className="subtitle">{sub.subtitle}</p>
+        <h4 className="title">{sub.title}</h4>
+        <Link href={"#"} className="sub-btn">
+          {sub.subsrcibe} <BsTwitterX className="btn-icon" />
+        </Link>
+      </div>
 
-      <div className="bg-gray-900/50">
+      <div className="subs-images">
         <ImagesInOne images={sub.images} />
       </div>
     </div>

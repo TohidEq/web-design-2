@@ -1,0 +1,41 @@
+.subscription {
+  @apply block lg:flex lg:items-center container mx-auto 
+  py-10
+  lg:py-36 xl:pl-24;
+  .subs-texts {
+    @apply mb-24 lg:mb-0;
+    .subtitle {
+      @extend .title-5-sizing;
+      @apply uppercase text-orange hidden md:block relative  pl-10;
+      &::after {
+        @apply content-[""] absolute w-9 rounded-2xl h-0.5 bg-orange font-semibold left-0 top-1/2 -translate-y-1/2;
+      }
+    }
+    .title {
+      @extend .title-2-sizing;
+      @apply font-bold mx-auto text-center md:text-left 
+      md:pt-6
+      pb-7
+      max-w-[370px] sm:max-w-[550px] md:max-w-[800px];
+    }
+    .sub-btn {
+      @extend .btn-1, .title-5-sizing;
+
+      @apply flex items-center 
+      mx-auto lg:mx-0
+      font-bold 
+      py-2.5 lg:py-3
+      pl-5 pr-3 lg:pl-6 lg:pr-4
+      border-orange w-fit;
+
+      .btn-icon {
+        @apply ml-4 bg-orange p-1 rounded-full 
+        h-9 w-9;
+      }
+    }
+  }
+
+  .subs-images {
+    @apply relative w-full mx-auto overflow-hidden lg:overflow-visible  lg:scale-110 xl:scale-125;
+  }
+}

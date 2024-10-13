@@ -5,7 +5,6 @@ type Props = { images: LangsDict["subscription"]["images"] };
 function ImagesInOne({ images }: Props) {
   return (
     <div className="images-in-one">
-      {images[0]}
       <div className="iio-container">
         <ul className="images">
           {images.map((image, key) => {

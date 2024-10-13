@@ -1,14 +1,64 @@
 .images-in-one {
+  @apply w-fit relative  left-1/2 -translate-x-1/2;
+
+  &::before {
+    @apply content-[""] absolute w-full h-[10%] left-0 top-0  z-20 bg-gradient-to-b from-dark-2 to-transparent;
+  }
+  &::after {
+    @apply content-[""] absolute w-full h-[10%] left-0 bottom-0 z-20
+  bg-gradient-to-t from-dark-2 to-transparent;
+  }
+
   .iio-container {
-    @apply overflow-hidden p-2 bg-yellow-500 w-[500px] h-[350px];
+    @apply overflow-hidden w-[500px] h-[350px] relative
+    border-solid border-[1px] border-dark-2;
+
+    &::before {
+      @apply content-[""] absolute h-full w-[6%] left-0 top-0 
+      bg-gradient-to-r from-dark-2 to-transparent
+      z-10;
+    }
+    &::after {
+      @apply content-[""] absolute h-full w-[6%] right-0 top-0 z-10
+      bg-gradient-to-l from-dark-2 to-transparent;
+    }
+
     ul.images {
-      @apply flex relative p-2 bg-green-500 relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+      @apply flex 
+      relative 
+      top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+
+      @keyframes moving_images {
+        0% {
+          @apply top-0 left-0;
+        }
+
+        50% {
+          @apply -top-2 left-1;
+        }
+
+        100% {
+          @apply top-0 left-0;
+        }
+      }
+      @keyframes rev_moving_images {
+        0% {
+          @apply top-0 left-0;
+        }
+
+        50% {
+          @apply top-2 -left-1;
+        }
+
+        100% {
+          @apply top-0 left-0;
+        }
+      }
 
       .image-keeper {
         @apply relative rotate-[20deg] 
         mx-0.5
         overflow-hidden z-20
-        p-2 bg-red-500
         w-[100px] h-[400px];
 
         &:first-child {
@@ -26,11 +76,26 @@
           }
         }
 
+        &:nth-child(2n-1) {
+          .image {
+            animation: rev_moving_images 1.7s linear infinite;
+          }
+        }
+
         .image {
-          @apply bg-left bg-cover  scale-90 -top-5 -left-[68px]
+          @apply bg-left bg-cover  scale-90 
           absolute -rotate-[20deg]
+          transition-all duration-300
           
+
+          -translate-x-1/4
           w-[250px] h-[500px];
+          animation: moving_images 1.3s linear infinite;
+
+          &:hover {
+            @apply scale-[103%];
+            animation-play-state: paused;
+          }
         }
       }
     }
