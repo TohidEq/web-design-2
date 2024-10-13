@@ -13,9 +13,7 @@ function ImagesInOne({ images }: Props) {
                 <div
                   className="image"
                   style={{ backgroundImage: `url(${image})` }}
-                >
-                  testtt
-                </div>
+                ></div>
               </div>
             );
           })}
