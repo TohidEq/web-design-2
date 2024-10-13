@@ -1,0 +1,38 @@
+.images-in-one {
+  .iio-container {
+    @apply overflow-hidden p-2 bg-yellow-500 w-[500px] h-[350px];
+    ul.images {
+      @apply flex relative p-2 bg-green-500 relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+
+      .image-keeper {
+        @apply relative rotate-[20deg] 
+        mx-0.5
+        overflow-hidden z-20
+        p-2 bg-red-500
+        w-[100px] h-[400px];
+
+        &:first-child {
+          @apply overflow-visible z-10;
+
+          .image {
+            @apply bg-right;
+          }
+        }
+        &:last-child {
+          @apply overflow-visible z-10;
+
+          .image {
+            @apply bg-center;
+          }
+        }
+
+        .image {
+          @apply bg-left bg-cover  scale-90 -top-5 -left-[68px]
+          absolute -rotate-[20deg]
+          
+          w-[250px] h-[500px];
+        }
+      }
+    }
+  }
+}

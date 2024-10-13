@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import CardImageTitle from "./cards/CardImageTitle";
+import CardImageTitle from "@/components/cards/CardImageTitle";
 
 type Props = {
   heroes: LangsDict["popular_heroes"]["heroes"];

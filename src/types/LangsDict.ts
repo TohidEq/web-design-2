@@ -32,6 +32,13 @@ type LangsDict = {
       right: string;
     };
   };
+
+  subscription: {
+    subtitle: string;
+    title: string;
+    subsrcibe: string;
+    images: string[];
+  };
   footer: {
     copyright: string;
     links: string[];
