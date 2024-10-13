@@ -150,6 +150,19 @@
     }
   },
 
+  "subscription": {
+    "subtitle": "subscription",
+    "title": "Subscribe for future updates",
+    "subsrcibe": "Subscribe",
+    "images": [
+      "/images/subs/s-1.png",
+      "/images/subs/s-2.png",
+      "/images/subs/s-3.png",
+      "/images/subs/s-4.png",
+      "/images/subs/s-5.png"
+    ]
+  },
+
   "footer": {
     "copyright": "™ & © 2024 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks or registered trademarks.",
     "links": [
