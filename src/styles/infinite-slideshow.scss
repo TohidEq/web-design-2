@@ -14,6 +14,22 @@
 
   &.slideshow-animation {
     @apply flex flex-nowrap overflow-hidden;
+    &::before,
+    &::after {
+      @apply content-[""] absolute z-10
+      from-dark-2 to-transparent
+      h-full 
+      w-3 lg:w-4 xl:w-5
+      top-0;
+    }
+    &::before {
+      @apply bg-gradient-to-r
+      left-0 -translate-x-1;
+    }
+    &::after {
+      @apply bg-gradient-to-l
+      right-0 translate-x-1;
+    }
     .slide-track {
       animation: slideshow 25s linear infinite;
 
