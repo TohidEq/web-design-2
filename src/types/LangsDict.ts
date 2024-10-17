@@ -4,6 +4,7 @@ type LangsDict = {
     signup: string;
     connect_wallet: string;
   };
+
   welcome: {
     title: string;
     sub_title: string;
@@ -13,6 +14,23 @@ type LangsDict = {
       title: string;
       img: string;
       url: string;
+    }[];
+  };
+
+  heroes: {
+    watch_more: string;
+    cards: {
+      title: string;
+      description: string;
+      img: string;
+    }[];
+    more_detailed: string;
+    slides: {
+      title: string;
+      subtitile: string;
+      description: string;
+      img: string;
+      img_bg: string;
     }[];
   };
 
@@ -39,6 +57,7 @@ type LangsDict = {
     subsrcibe: string;
     images: string[];
   };
+
   footer: {
     copyright: string;
     links: string[];

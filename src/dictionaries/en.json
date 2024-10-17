@@ -15,6 +15,7 @@
     "signup": "Sign up",
     "connect_wallet": "Connect wallet"
   },
+
   "welcome": {
     "title": "Web 3 Multiplayer Battle Arena",
     "sub_title": "The Future Of Gaming",
@@ -45,6 +46,80 @@
         "title": "Watch the trailer",
         "img": "/images/welcome/slide-2.png",
         "url": "#"
+      }
+    ]
+  },
+
+  "heroes": {
+    "watch_more": "Watch more",
+    "cards": [
+      {
+        "title": "Epic Battles Reimagined - Dive into DOT",
+        "description": "Where the legacy of Dota 2 is reborn with enhanced gameplay! Encounter a diverse roster of enthralling heroes and immerse yourself in innovative match setups – from classic 5v5 to the intense triple-threat action of 3v3v3. Prepare for a battle arena that pulsates with life and vibrancy!",
+        "img": "/images/heroes/cards/hero-card-1.png"
+      },
+      {
+        "title": "True GameFi Thrills - Embark on a real GameFi odyssey with DOT!",
+        "description": "Forge your fortune by trading thousands of in-game items as exclusive NFTs. Feel the adrenaline rush as you bet $DOT tokens on upcoming battles – where the victor claims all. Gaming isn't just fun; it's a potential investment, with every victory swelling your digital wallet.",
+        "img": "/images/heroes/cards/hero-card-2.png"
+      },
+      {
+        "title": "Championship Glory - Step into the spotlight in our DOT",
+        "description": "Championships! Compete as a lone warrior or rally your team, with each tournament streamed live for the world to witness. Fight for honor, fame, and a colossal prize pot in electrifying showdowns that will be etched in the annals of gaming history.",
+        "img": "/images/heroes/cards/hero-card-3.png"
+      },
+      {
+        "title": "$DOT - The Currency of Champions",
+        "description": "Assert your financial strategy by trading $DOT on leading platforms and exchanges. As the lifeblood of our game's ecosystem, $BOTH tokens are your key to a vast economy, powering trades, bets, and the market, pulsing at the heart of DOT.",
+        "img": "/images/heroes/cards/hero-card-4.png"
+      },
+      {
+        "title": "Web 3.0 - A New Gaming Dimension",
+        "description": "DOT isn't just a game; it's a gateway to the future. Built on the robust foundation of Web 3.0, it's an immersive world where every interaction, transaction, and victory is empowered by the blockchain. Experience gaming with unrivaled transparency, security, and community-driven development.",
+        "img": "/images/heroes/cards/hero-card-5.png"
+      },
+      {
+        "title": "Connective Combat - Multi-Chain Mayhem",
+        "description": "With DOT’s multi-chain functionality, your gaming legacy lives on any blockchain. Dominate across networks, keep your assets agile, and your victories versatile.",
+        "img": "/images/heroes/cards/hero-card-6.png"
+      }
+    ],
+    "more_detailed": "more detailed",
+    "slides": [
+      {
+        "title": "Gorgomath",
+        "subtitle": "Unseen Terror",
+        "description": "In the dark chasms of the Underworld, where light fears to tread, Gorgomath was born from the chaos of unbridled magic and the remnants of forgotten beasts. A creature of nightmares, Gorgomath roams the battlefields, seeking to impose the terror of the Underworld onto the land of the living. With each battle, it grows stronger, feeding on the fear and despair of its foes.",
+        "img": "/images/heroes/slides/hero-1.png",
+        "img_bg": "/images/heroes/slides/wallpapaer-1.png"
+      },
+      {
+        "title": "Sylvanthea",
+        "subtitle": "Guardian of the Enchanted Forest",
+        "description": "Sylvanthea, a spirit as old as the forest itself, has watched over the Enchanted Forest for centuries. Born from the heart of the oldest tree and nurtured by the magic of the earth, she embodies the tranquility and resilience of nature. Sylvanthea stands as the guardian against those who seek to harm the natural balance, using her powers to heal and protect her domain.",
+        "img": "/images/heroes/slides/hero-2.png",
+        "img_bg": "/images/heroes/slides/wallpapaer-2.png"
+      },
+      {
+        "title": "Oculothorax",
+        "subtitle": "Visionary Terror",
+        "description": "Oculothorax, the Visionary Terror, is a being of nightmares, inspired by the eerie creatures of Pan's Labyrinth. This hero, with an eyeless face and eyes on the palms of its hands, embodies the essence of dark fantasy and terror. Roaming the shadowy realms, Oculothorax sees all, using its hand-eyes to gaze into both the physical and spiritual worlds. Its elongated, twisted body moves with an otherworldly grace, instilling dread in the hearts of those who encounter it. Oculothorax is not just a creature of horror, but a guardian of ancient, mystical secrets, lurking in the places where reality bends.",
+        "img": "/images/heroes/slides/hero-3.png",
+        "img_bg": "/images/heroes/slides/wallpapaer-3.png"
+      },
+      {
+        "title": "Vorix",
+        "subtitle": "Nightmare Weaver",
+        "description": "The Nightmare Weaver is the embodiment of fear and revulsion, a being so grotesque that its mere presence warps the fabric of reality. With a body that horrifies the senses, Vorix's distended, rotting stomach, unnaturally twisted skinny legs, and a nightmarish rat-like head set it apart as a creature of darkness and despair. Its eyes, filled with the glow of malice, and its jagged-toothed maw, speak of a hunger for suffering and chaos.",
+        "img": "/images/heroes/slides/hero-4.png",
+        "img_bg": "/images/heroes/slides/wallpapaer-4.png"
+      },
+      {
+        "title": "Nature Bind",
+        "subtitle": "Wild Guardian",
+        "description": "Once a humble guardian of ancient forests, Nature Bind transformed into a formidable entity, embodying the untamed power of nature to defend against dark forces. A towering figure, resembling a fusion of natural elements like gnarled wood, moss, and living vines. His eyes shine like emerald leaves, and he moves with the grace of a predator. His presence is marked by the rustling of leaves and whispering wind.",
+        "img": "/images/heroes/slides/hero-5.png",
+        "img_bg": "/images/heroes/slides/wallpapaer-5.png"
       }
     ]
   },
@@ -141,6 +216,7 @@
       }
     ]
   },
+
   "trailer_video": {
     "url": "/videos/Dota2.mp4",
     "thumbnail": "/images/dota2_video_preview.png",
