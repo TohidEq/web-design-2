@@ -4,20 +4,24 @@ import Welcome from "@/components/Welcome";
 import PopularHeroes from "@/components/PopularHeroes";
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import Subscription from "@/components/subscription/Subscription";
+import HeroesCards from "@/components/heroes/HeroesCards";
 
 export default async function Home({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
-  const { welcome, popular_heroes, trailer_video, subscription } =
-    await getDictionary(lang);
+  const langDict = await getDictionary(lang);
   return (
     <div className="Home">
-      <Welcome welcome={welcome} />
-      <PopularHeroes popular_heroes={popular_heroes} />
-      <VideoPlayer trailerVideo={trailer_video} />
-      <Subscription subscription={subscription} />
+      <Welcome welcome={langDict.welcome} />
+      <HeroesCards
+        herosCards={langDict.heroes.cards}
+        watchMore={langDict.heroes.watch_more}
+      />
+      <PopularHeroes popular_heroes={langDict.popular_heroes} />
+      <VideoPlayer trailerVideo={langDict.trailer_video} />
+      <Subscription subscription={langDict.subscription} />
     </div>
   );
 }
