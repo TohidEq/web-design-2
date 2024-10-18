@@ -52,6 +52,7 @@
 
   "heroes": {
     "watch_more": "Watch more",
+    "watch_less": "Watch less",
     "cards": [
       {
         "title": "Epic Battles Reimagined - Dive into DOT",

@@ -19,6 +19,7 @@ type LangsDict = {
 
   heroes: {
     watch_more: string;
+    watch_less: string;
     cards: {
       title: string;
       description: string;

@@ -18,6 +18,7 @@ export default async function Home({
       <HeroesCards
         herosCards={langDict.heroes.cards}
         watchMore={langDict.heroes.watch_more}
+        watchLess={langDict.heroes.watch_less}
       />
       <PopularHeroes popular_heroes={langDict.popular_heroes} />
       <VideoPlayer trailerVideo={langDict.trailer_video} />

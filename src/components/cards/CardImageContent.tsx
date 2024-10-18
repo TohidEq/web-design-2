@@ -4,20 +4,23 @@ type Props = {
   image: string;
   title: string;
   description: string;
+  index: number;
 };
 
-function CardImageContent({ image, title, description }: Props) {
+function CardImageContent({ image, title, description, index }: Props) {
   return (
     <div className="card-image-content">
       <div className="card-container">
         <div className="card-image">
           <div
-            className="img w-20 h-20"
-            style={{ background: `url(${image})` }}
+            className="img"
+            style={{ backgroundImage: `url(${image})` }}
           ></div>
         </div>
         <div className="card-content">
-          <div className="title">{title}</div>
+          <div className="title">
+            {index}. {title}
+          </div>
           <div className="description">{description}</div>
         </div>
       </div>
