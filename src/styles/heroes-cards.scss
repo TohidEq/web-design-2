@@ -1,4 +1,12 @@
 .heroes-cards {
+  @apply relative py-28;
+  &::before {
+    @apply content-[""] absolute -z-20
+    bg-cover bg-center
+    w-full h-full left-0 top-0 opacity-[0.04];
+
+    background-image: url("/images/heroes/cards/heroes-bg.png");
+  }
   .heroes-cards-container {
     @apply w-fit relative
 
@@ -10,11 +18,10 @@
       @apply max-h-[800px] lg:max-h-none overflow-hidden;
 
       &:after {
-        @apply content-[""] absolute lg:hidden 
+        @apply content-[""] absolute lg:hidden opacity-90
         bg-gradient-to-t from-dark-2 to-transparent
         w-full h-20
-        bottom-0 left-0
-        translate-y-1;
+        bottom-0 left-0;
       }
     }
     &.all {

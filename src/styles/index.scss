@@ -1745,7 +1745,44 @@ body{
 
 /* 5 8 59*/
 
-.heroes-cards {
+.heroes-cards{
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  &::before{
+    position: absolute;
+  }
+  &::before{
+    left: 0px;
+  }
+  &::before{
+    top: 0px;
+  }
+  &::before{
+    z-index: -20;
+  }
+  &::before{
+    height: 100%;
+  }
+  &::before{
+    width: 100%;
+  }
+  &::before{
+    background-size: cover;
+  }
+  &::before{
+    background-position: center;
+  }
+  &::before{
+    opacity: 0.04;
+  }
+  &::before{
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+  &::before {
+    background-image: url("/images/heroes/cards/heroes-bg.png");
+  }
   .heroes-cards-container{
     position: relative;
   }
@@ -1801,10 +1838,6 @@ body{
         width: 100%;
       }
       &:after{
-        --tw-translate-y: 0.25rem;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      }
-      &:after{
         background-image: linear-gradient(to top, var(--tw-gradient-stops));
       }
       &:after{
@@ -1814,6 +1847,9 @@ body{
       }
       &:after{
         --tw-gradient-to: transparent var(--tw-gradient-to-position);
+      }
+      &:after{
+        opacity: 0.9;
       }
       &:after{
         --tw-content: "";
