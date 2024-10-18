@@ -1819,6 +1819,11 @@ body{
         --tw-content: "";
         content: var(--tw-content);
       }
+      @media (min-width: 1024px){
+        &:after{
+          display: none;
+        }
+      }
     }
     &.all{
       max-height: none;
@@ -2031,6 +2036,18 @@ body{
   }
   .show-all{
     display: flex;
+  }
+  .show-all{
+    min-width: 212px;
+  }
+  .show-all{
+    justify-content: center;
+  }
+  .show-all{
+    text-align: center;
+  }
+  .show-all{
+    font-weight: 700;
   }
   @media (min-width: 1024px){
     .show-all{
