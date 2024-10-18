@@ -57,7 +57,7 @@
 
         .card-container {
           .card-image {
-            @apply w-full h-[200px];
+            @apply w-full h-[200px] overflow-hidden;
             .img {
               @apply bg-center bg-cover transition-all duration-300
               w-full h-full;
