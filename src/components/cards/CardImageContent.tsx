@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 type Props = {
@@ -5,11 +6,22 @@ type Props = {
   title: string;
   description: string;
   index: number;
+  hoveredfunc: React.Dispatch<React.SetStateAction<string>>;
 };
 
-function CardImageContent({ image, title, description, index }: Props) {
+function CardImageContent({
+  image,
+  title,
+  description,
+  index,
+  hoveredfunc,
+}: Props) {
   return (
-    <div className="card-image-content">
+    <div
+      className="card-image-content"
+      onMouseEnter={() => hoveredfunc("hovered")}
+      onMouseLeave={() => hoveredfunc("")}
+    >
       <div className="card-container">
         <div className="card-image">
           <div

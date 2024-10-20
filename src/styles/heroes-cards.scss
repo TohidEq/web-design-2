@@ -1,5 +1,5 @@
 .heroes-cards {
-  @apply relative py-28;
+  @apply relative py-28 overflow-hidden;
   &::before {
     @apply content-[""] absolute -z-20
     bg-cover bg-center
@@ -8,14 +8,14 @@
     background-image: url("/images/heroes/cards/heroes-bg.png");
   }
   .heroes-cards-container {
-    @apply w-fit relative
-
-    lg:w-[90%] lg:pr-[40%] 
-    xl:w-[100%]
-    
+    @apply w-fit max-w-[800px]
+    relative
+    lg:w-1/2
+    lg:-translate-x-1/2
     mx-auto;
+
     &.few {
-      @apply max-h-[800px] lg:max-h-none overflow-hidden;
+      @apply max-h-[800px] lg:max-h-none;
 
       &:after {
         @apply content-[""] absolute lg:hidden opacity-90
@@ -30,18 +30,25 @@
 
     .cards-container {
       @apply justify-center
-      grid grid-cols-1 gap-2 md:grid-cols-2 lg:gap-0
+      grid
+      gap-2
+      lg:gap-0
+      grid-cols-1
+      md:grid-cols-2
       lg:grid-cols-6
-      relative
+
       lg:min-h-[500px]
       xl:min-h-[580px]
-      lg:left-[4%]
-      xl:left-[15%];
 
-      &:hover {
+      relative
+      lg:translate-x-[14%]
+      xl:translate-x-[20%]
+      2xl:translate-x-[30%];
+
+      &.hovered {
         .card-image-content {
           &:hover {
-            @apply lg:opacity-100 lg:translate-y-2 lg:z-10
+            @apply lg:opacity-100  lg:z-10
             border-orange;
             .img {
               @apply scale-105;
@@ -49,17 +56,18 @@
           }
         }
         .card-image-content:not(:hover) {
-          @apply lg:h-[200px];
+          @apply lg:h-[200px] lg:relative lg:opacity-0
+          lg:translate-y-[100px];
         }
       }
 
       .card-image-content {
-        @apply rounded-2xl overflow-hidden
+        @apply rounded-2xl overflow-hidden cursor-pointer
         transition-all duration-500
         bg-dark-2
         border-2 border-orange/40
         max-w-[300px] lg:max-w-none
-        
+
         lg:w-[490px] xl:h-[570px];
 
         .card-container {
@@ -88,7 +96,7 @@
   }
   .show-all {
     @extend .btn-2-orange;
-    @apply flex justify-center mx-auto lg:hidden  
+    @apply flex justify-center mx-auto lg:hidden
     text-center
     min-w-[212px] font-bold
     my-5;

@@ -1747,6 +1747,7 @@ body{
 
 .heroes-cards{
   position: relative;
+  overflow: hidden;
   padding-top: 7rem;
   padding-bottom: 7rem;
   &::before{
@@ -1794,27 +1795,23 @@ body{
     width: -moz-fit-content;
     width: fit-content;
   }
+  .heroes-cards-container{
+    max-width: 800px;
+  }
   @media (min-width: 1024px){
     .heroes-cards-container{
-      width: 90%;
+      width: 50%;
     }
   }
   @media (min-width: 1024px){
     .heroes-cards-container{
-      padding-right: 40%;
-    }
-  }
-  @media (min-width: 1280px){
-    .heroes-cards-container{
-      width: 100%;
+      --tw-translate-x: -50%;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
   }
   .heroes-cards-container {
     &.few{
       max-height: 800px;
-    }
-    &.few{
-      overflow: hidden;
     }
     @media (min-width: 1024px){
       &.few{
@@ -1886,12 +1883,13 @@ body{
     }
     @media (min-width: 1024px){
       .cards-container{
-        left: 4%;
+        min-height: 500px;
       }
     }
     @media (min-width: 1024px){
       .cards-container{
-        min-height: 500px;
+        --tw-translate-x: 14%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       }
     }
     @media (min-width: 1024px){
@@ -1906,16 +1904,23 @@ body{
     }
     @media (min-width: 1280px){
       .cards-container{
-        left: 15%;
+        min-height: 580px;
       }
     }
     @media (min-width: 1280px){
       .cards-container{
-        min-height: 580px;
+        --tw-translate-x: 20%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      }
+    }
+    @media (min-width: 1536px){
+      .cards-container{
+        --tw-translate-x: 30%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       }
     }
     .cards-container {
-      &:hover {
+      &.hovered {
         .card-image-content {
           &:hover{
             --tw-border-opacity: 1;
@@ -1924,12 +1929,6 @@ body{
           @media (min-width: 1024px){
             &:hover{
               z-index: 10;
-            }
-          }
-          @media (min-width: 1024px){
-            &:hover{
-              --tw-translate-y: 0.5rem;
-              transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
             }
           }
           @media (min-width: 1024px){
@@ -1947,12 +1946,31 @@ body{
         }
         @media (min-width: 1024px){
           .card-image-content:not(:hover){
+            position: relative;
+          }
+        }
+        @media (min-width: 1024px){
+          .card-image-content:not(:hover){
             height: 200px;
+          }
+        }
+        @media (min-width: 1024px){
+          .card-image-content:not(:hover){
+            --tw-translate-y: 100px;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          }
+        }
+        @media (min-width: 1024px){
+          .card-image-content:not(:hover){
+            opacity: 0;
           }
         }
       }
       .card-image-content{
         max-width: 300px;
+      }
+      .card-image-content{
+        cursor: pointer;
       }
       .card-image-content{
         overflow: hidden;
@@ -3359,6 +3377,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   display: block;
+  overflow: hidden;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
