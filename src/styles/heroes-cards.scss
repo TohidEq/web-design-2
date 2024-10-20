@@ -8,7 +8,7 @@
     background-image: url("/images/heroes/cards/heroes-bg.png");
   }
   .heroes-cards-container {
-    @apply w-fit max-w-[800px]
+    @apply w-fit max-w-[800px] overflow-hidden lg:overflow-visible
     relative
     lg:w-1/2
     lg:-translate-x-1/2
