@@ -7,6 +7,7 @@
 
 body {
   @apply bg-dark-2;
+  overflow: overlay;
   * {
     @apply text-white font-quicksand;
   }
@@ -16,6 +17,26 @@ body {
   &::selection {
     @apply bg-blue-light/70 text-black/95;
   }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #00ff00;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 100vh;
+  border: 3px solid #0000ff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff00ff;
 }
 
 .title-1-sizing {
@@ -73,7 +94,7 @@ body {
 
 .btn-2-orange {
   @extend .btn-hover;
-  @apply bg-orange rounded-full 
-  
+  @apply bg-orange rounded-full
+
   px-5 py-3;
 }

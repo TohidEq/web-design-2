@@ -578,6 +578,7 @@ video {
 body{
   --tw-bg-opacity: 1;
   background-color: rgb(15 10 8 / var(--tw-bg-opacity));
+  overflow: overlay;
   *{
     font-family: Quicksand, sans-serif;
   }
@@ -602,6 +603,26 @@ body{
   &::selection{
     color: rgb(11 11 13 / 0.95);
   }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #00ff00;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 100vh;
+  border: 3px solid #0000ff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff00ff;
 }
 
 .title-1-sizing{
