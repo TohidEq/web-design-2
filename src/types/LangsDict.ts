@@ -28,8 +28,8 @@ type LangsDict = {
     more_detailed: string;
     slides: {
       title: string;
-      subtitile: string;
       description: string;
+      subtitle: string;
       img: string;
       img_bg: string;
     }[];

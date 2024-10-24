@@ -1,0 +1,22 @@
+.heroes-slides {
+  @apply p-10 m-10;
+  .line-square {
+    .line {
+      @apply relative w-0.5 h-[170px] bg-gradient-to-t from-orange to-transparent;
+
+      span.square {
+        @apply absolute w-[7px] h-[7px] bg-orange
+        -bottom-6
+        left-1/2 -translate-x-1/2
+        rotate-45;
+      }
+    }
+  }
+
+  .dots {
+    .dot {
+      @apply bg-orange rounded-full
+      w-1.5 h-1.5 my-5;
+    }
+  }
+}
