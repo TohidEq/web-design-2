@@ -24,27 +24,27 @@
     "slides": [
       {
         "title": "Personnages principaux",
-        "img": "/images/welcome/slide-1.png",
+        "img": "/images/welcome/slide-1.jpg",
         "url": "#"
       },
       {
         "title": "Regardez la bande annonce",
-        "img": "/images/welcome/slide-2.png",
+        "img": "/images/welcome/slide-2.jpg",
         "url": "#"
       },
       {
         "title": "Actualités principales",
-        "img": "/images/welcome/slide-3.png",
+        "img": "/images/welcome/slide-3.jpg",
         "url": "#"
       },
       {
         "title": "Personnages principaux",
-        "img": "/images/welcome/slide-1.png",
+        "img": "/images/welcome/slide-1.jpg",
         "url": "#"
       },
       {
         "title": "Regardez la bande annonce",
-        "img": "/images/welcome/slide-2.png",
+        "img": "/images/welcome/slide-2.jpg",
         "url": "#"
       }
     ]
@@ -57,27 +57,27 @@
       {
         "title": "Batailles Épiques Réinventées - Plongez dans DOT",
         "description": "Là où l'héritage de Dota 2 renaît avec un gameplay amélioré ! Rencontrez un éventail diversifié de héros captivants et plongez dans des configurations de match innovantes – du classique 5v5 à l'intense action de menace triple en 3v3v3. Préparez-vous pour une arène de combat qui pulse de vie et de vitalité !",
-        "img": "/images/heroes/cards/hero-card-1.png"
+        "img": "/images/heroes/cards/hero-card-1.jpg"
       },
       {
         "title": "Véritables Frissons GameFi - Embarquez dans une véritable odyssée GameFi avec DOT !",
         "description": "Forgez votre fortune en échangeant des milliers d'objets en jeu sous forme de NFTs exclusifs. Ressentez l'adrénaline monter alors que vous pariez des tokens $DOT sur les batailles à venir – où le vainqueur remporte tout. Le jeu n'est pas seulement amusant ; c'est un investissement potentiel, chaque victoire gonflant votre portefeuille numérique.",
-        "img": "/images/heroes/cards/hero-card-2.png"
+        "img": "/images/heroes/cards/hero-card-2.jpg"
       },
       {
         "title": "Gloire du Championnat - Entrez dans la lumière de notre DOT",
         "description": "Championnats ! Compétitionnez en tant que guerrier solitaire ou rassemblez votre équipe, chaque tournoi étant diffusé en direct pour que le monde puisse témoigner. Combattez pour l'honneur, la renommée et un énorme pot de prix dans des affrontements électrisants qui resteront gravés dans les annales de l'histoire du jeu.",
-        "img": "/images/heroes/cards/hero-card-3.png"
+        "img": "/images/heroes/cards/hero-card-3.jpg"
       },
       {
         "title": "$DOT - La Monnaie des Champions",
         "description": "Affirmez votre stratégie financière en échangeant des $DOT sur les principales plateformes et bourses. En tant que pierre angulaire de l'écosystème de notre jeu, les tokens $BOTH sont la clé d'une vaste économie, alimentant les échanges, les paris et le marché, pulsant au cœur de DOT.",
-        "img": "/images/heroes/cards/hero-card-4.png"
+        "img": "/images/heroes/cards/hero-card-4.jpg"
       },
       {
         "title": "Web 3.0 - Une Nouvelle Dimension de Jeu",
         "description": "DOT n'est pas seulement un jeu ; c'est une porte d'entrée vers l'avenir. Construite sur les bases solides du Web 3.0, c'est un monde immersif où chaque interaction, transaction et victoire est renforcée par la blockchain. Découvrez le jeu avec une transparence, une sécurité et un développement communautaire sans précédent.",
-        "img": "/images/heroes/cards/hero-card-5.png"
+        "img": "/images/heroes/cards/hero-card-5.jpg"
       },
       {
         "title": "Combat Connectif - Chaos Multi-Chain",
@@ -92,35 +92,35 @@
         "subtitle": "Terreur Inconnue",
         "description": "Dans les sombres gouffres du Monde Souterrain, là où la lumière craint de s'aventurer, Gorgomath est né du chaos d'une magie débridée et des vestiges de créatures oubliées. Une créature de cauchemar, Gorgomath rôde sur les champs de bataille, cherchant à imposer la terreur du Monde Souterrain sur le monde des vivants. À chaque bataille, il devient plus fort, se nourrissant de la peur et du désespoir de ses ennemis.",
         "img": "/images/heroes/slides/hero-1.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-1.png"
+        "img_bg": "/images/heroes/slides/wallpapaer-1.jpg"
       },
       {
         "title": "Sylvanthea",
         "subtitle": "Gardienne de la Forêt Enchantée",
         "description": "Sylvanthea, un esprit aussi ancien que la forêt elle-même, veille sur la Forêt Enchantée depuis des siècles. Née du cœur de l'arbre le plus vieux et nourrie par la magie de la terre, elle incarne la tranquillité et la résilience de la nature. Sylvanthea se tient comme la gardienne contre ceux qui cherchent à nuire à l'équilibre naturel, utilisant ses pouvoirs pour guérir et protéger son domaine.",
         "img": "/images/heroes/slides/hero-2.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-2.png"
+        "img_bg": "/images/heroes/slides/wallpapaer-2.jpg"
       },
       {
         "title": "Oculothorax",
         "subtitle": "Terreur Visionnaire",
         "description": "Oculothorax, la Terreur Visionnaire, est une créature de cauchemar, inspirée par les créatures étranges du Labyrinthe de Pan. Ce héros, avec un visage sans yeux et des yeux sur les paumes de ses mains, incarne l'essence du fantastique sombre et de la terreur. Errant dans les royaumes d'ombre, Oculothorax voit tout, utilisant ses mains-yeux pour scruter à la fois les mondes physique et spirituel. Son corps allongé et tordu se meut avec une grâce surnaturelle, instillant la terreur dans le cœur de ceux qui le rencontrent. Oculothorax n'est pas seulement une créature d'horreur, mais aussi un gardien de secrets mystiques anciens, caché dans les endroits où la réalité se plie.",
         "img": "/images/heroes/slides/hero-3.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-3.png"
+        "img_bg": "/images/heroes/slides/wallpapaer-3.jpg"
       },
       {
         "title": "Vorix",
         "subtitle": "Tisseur de Cauchemars",
         "description": "Le Tisseur de Cauchemars est l'incarnation de la peur et du dégoût, un être si grotesque que sa simple présence déforme le tissu de la réalité. Avec un corps qui horrifie les sens, le ventre distendu et pourrissant de Vorix, ses jambes maigres et tordues de manière anormale, et sa tête cauchemardesque de rat le distinguent comme une créature des ténèbres et du désespoir. Ses yeux, remplis d'une lueur malveillante, et sa gueule aux dents effilées parlent d'une faim pour la souffrance et le chaos.",
         "img": "/images/heroes/slides/hero-4.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-4.png"
+        "img_bg": "/images/heroes/slides/wallpapaer-4.jpg"
       },
       {
         "title": "Lien de la Nature",
         "subtitle": "Gardien Sauvage",
         "description": "Autrefois un simple gardien des anciennes forêts, Lien de la Nature s'est transformé en une entité redoutable, incarnant la puissance sauvage de la nature pour se défendre contre les forces obscures. Une figure imposante, ressemblant à une fusion d'éléments naturels comme le bois noueux, la mousse et les vignes vivantes. Ses yeux brillent comme des feuilles d'émeraude, et il se déplace avec la grâce d'un prédateur. Sa présence est marquée par le bruissement des feuilles et le murmure du vent.",
         "img": "/images/heroes/slides/hero-5.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-5.png"
+        "img_bg": "/images/heroes/slides/wallpapaer-5.jpg"
       }
     ]
   },
@@ -134,85 +134,85 @@
       {
         "name": "Ember Arch",
         "type": 0,
-        "img": "/images/popular-heroes-slides/hero-001.png",
+        "img": "/images/popular-heroes-slides/hero-001.jpg",
         "url": "#"
       },
       {
         "name": "Phanto Assassin",
         "type": 1,
-        "img": "/images/popular-heroes-slides/hero-002.png",
+        "img": "/images/popular-heroes-slides/hero-002.jpg",
         "url": "#"
       },
       {
         "name": "Enchantress",
         "type": 2,
-        "img": "/images/popular-heroes-slides/hero-003.png",
+        "img": "/images/popular-heroes-slides/hero-003.jpg",
         "url": "#"
       },
       {
         "name": "Ember Spirit",
         "type": 1,
-        "img": "/images/popular-heroes-slides/hero-004.png",
+        "img": "/images/popular-heroes-slides/hero-004.jpg",
         "url": "#"
       },
       {
         "name": "Ghool",
         "type": 3,
-        "img": "/images/popular-heroes-slides/hero-005.png",
+        "img": "/images/popular-heroes-slides/hero-005.jpg",
         "url": "#"
       },
       {
         "name": "Puck",
         "type": 4,
-        "img": "/images/popular-heroes-slides/hero-006.png",
+        "img": "/images/popular-heroes-slides/hero-006.jpg",
         "url": "#"
       },
       {
         "name": "Invoker",
         "type": 4,
-        "img": "/images/popular-heroes-slides/hero-007.png",
+        "img": "/images/popular-heroes-slides/hero-007.jpg",
         "url": "#"
       },
       {
         "name": "Bristle Back",
         "type": 3,
-        "img": "/images/popular-heroes-slides/hero-008.png",
+        "img": "/images/popular-heroes-slides/hero-008.jpg",
         "url": "#"
       },
       {
         "name": "Wraith King",
         "type": 1,
-        "img": "/images/popular-heroes-slides/hero-009.png",
+        "img": "/images/popular-heroes-slides/hero-009.jpg",
         "url": "#"
       },
       {
         "name": "Doom",
         "type": 3,
-        "img": "/images/popular-heroes-slides/hero-010.png",
+        "img": "/images/popular-heroes-slides/hero-010.jpg",
         "url": "#"
       },
       {
         "name": "Oracle",
         "type": 2,
-        "img": "/images/popular-heroes-slides/hero-011.png",
+        "img": "/images/popular-heroes-slides/hero-011.jpg",
         "url": "#"
       },
       {
         "name": "Skywrath Mage",
         "type": 4,
-        "img": "/images/popular-heroes-slides/hero-012.png",
+        "img": "/images/popular-heroes-slides/hero-012.jpg",
         "url": "#"
       },
       {
         "name": "Dawn Breaker",
         "type": 3,
-        "img": "/images/popular-heroes-slides/hero-013.png",
+        "img": "/images/popular-heroes-slides/hero-013.jpg",
         "url": "#"
       },
       {
         "name": "Venom",
         "type": 2,
-        "img": "/images/popular-heroes-slides/hero-014.png",
+        "img": "/images/popular-heroes-slides/hero-014.jpg",
         "url": "#"
       }
     ]
@@ -220,7 +220,7 @@
 
   "trailer_video": {
     "url": "/videos/Dota2.mp4",
-    "thumbnail": "/images/dota2_video_preview.png",
+    "thumbnail": "/images/dota2_video_preview.jpg",
     "title": {
       "left": "Regarder",
       "right": "remorque"
@@ -232,11 +232,11 @@
     "title": "Abonnez-vous pour les futures mises à jour",
     "subsrcibe": "S'abonner",
     "images": [
-      "/images/subs/s-1.png",
-      "/images/subs/s-2.png",
-      "/images/subs/s-3.png",
-      "/images/subs/s-4.png",
-      "/images/subs/s-5.png"
+      "/images/subs/s-1.jpg",
+      "/images/subs/s-2.jpg",
+      "/images/subs/s-3.jpg",
+      "/images/subs/s-4.jpg",
+      "/images/subs/s-5.jpg"
     ]
   },
 

@@ -10,7 +10,7 @@ export default async function Welcome({ welcome }: Props) {
   return (
     <main
       className="welcome"
-      style={{ backgroundImage: `url(/images/welcome/welcome-bg.png)` }}
+      style={{ backgroundImage: `url(/images/welcome/welcome-bg.jpg)` }}
     >
       <div className="fire-particles">
         <div className="fire-particles-container">
