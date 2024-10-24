@@ -3,9 +3,24 @@
   &::before {
     @apply content-[""] absolute -z-20
     bg-cover bg-center
-    w-full h-full left-0 top-0 opacity-[0.04];
+    w-full h-full left-0 top-0 opacity-[0.03];
 
     background-image: url("/images/heroes/cards/heroes-bg.png");
+  }
+
+  /*  */
+  &::after {
+    @apply content-[""] absolute
+    max-w-[900px] w-4/5 md:w-3/4 h-[90px]
+    top-0 left-1/2 -translate-x-1/2
+    bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
+    from-dark-2 from-5% to-transparent to-100%;
+  }
+  .bottom-bar {
+    @apply content-[""] absolute
+    w-full h-[90px]
+    bg-gradient-to-t from-dark-2 to-transparent
+    bottom-0 left-0 translate-y-0.5;
   }
   .heroes-cards-container {
     @apply w-fit max-w-[800px] overflow-hidden lg:overflow-visible

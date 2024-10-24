@@ -1775,7 +1775,7 @@ body{
     background-position: center;
   }
   &::before{
-    opacity: 0.04;
+    opacity: 0.03;
   }
   &::before{
     --tw-content: "";
@@ -1783,6 +1783,89 @@ body{
   }
   &::before {
     background-image: url("/images/heroes/cards/heroes-bg.png");
+  }
+  /*  */
+  &::after{
+    position: absolute;
+  }
+  &::after{
+    top: 0px;
+  }
+  &::after{
+    left: 50%;
+  }
+  &::after{
+    height: 90px;
+  }
+  &::after{
+    width: 80%;
+  }
+  &::after{
+    max-width: 900px;
+  }
+  &::after{
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  &::after{
+    background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+  }
+  &::after{
+    --tw-gradient-from: #0F0A08 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(15 10 8 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  &::after{
+    --tw-gradient-from-position: 5%;
+  }
+  &::after{
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+  }
+  &::after{
+    --tw-gradient-to-position: 100%;
+  }
+  &::after{
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+  @media (min-width: 768px){
+    &::after{
+      width: 75%;
+    }
+  }
+  .bottom-bar{
+    position: absolute;
+  }
+  .bottom-bar{
+    bottom: 0px;
+  }
+  .bottom-bar{
+    left: 0px;
+  }
+  .bottom-bar{
+    height: 90px;
+  }
+  .bottom-bar{
+    width: 100%;
+  }
+  .bottom-bar{
+    --tw-translate-y: 0.125rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .bottom-bar{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+  .bottom-bar{
+    --tw-gradient-from: #0F0A08 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(15 10 8 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  .bottom-bar{
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+  }
+  .bottom-bar{
+    --tw-content: "";
+    content: var(--tw-content);
   }
   .heroes-cards-container{
     position: relative;

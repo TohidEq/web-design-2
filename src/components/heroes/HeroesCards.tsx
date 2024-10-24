@@ -34,6 +34,7 @@ function HeroesCards({ herosCards, watchMore, watchLess }: Props) {
       <button className="show-all" onClick={() => setShowAll(!showAll)}>
         {showAll ? watchLess : watchMore}
       </button>
+      <div className="bottom-bar"></div>
     </div>
   );
 }
