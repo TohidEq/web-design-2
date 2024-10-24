@@ -11,7 +11,7 @@ type Props = {
 function HeroesCards({ herosCards, watchMore, watchLess }: Props) {
   const [showAll, setShowAll] = useState(false);
 
-  const [hovCard, setHovCard] = useState("hovered");
+  const [hovCard, setHovCard] = useState("");
 
   const allCards = herosCards.map((card, key) => {
     return (
