@@ -1,22 +1,91 @@
 .heroes-slides {
-  @apply p-10 m-10;
-  .line-square {
-    .line {
-      @apply relative w-0.5 h-[170px] bg-gradient-to-t from-orange to-transparent;
+  @apply min-h-[80vh] relative;
 
-      span.square {
-        @apply absolute w-[7px] h-[7px] bg-orange
-        -bottom-6
-        left-1/2 -translate-x-1/2
-        rotate-45;
-      }
+  .slide-bg {
+    @apply absolute content-[""]
+    w-full h-full left-0 top-0
+    bg-blue-600 opacity-30;
+
+    &::before {
+      @apply absolute content-[""]
+      w-full h-full left-0 top-0 z-10
+      bg-gradient-to-t from-dark-2 to-transparent;
+    }
+    &::after {
+      @apply absolute content-[""]
+      opacity-30
+      w-full h-full left-0 top-0 z-0
+      bg-gradient-to-b from-[#C4A68C] to-transparent;
     }
   }
 
-  .dots {
-    .dot {
-      @apply bg-orange rounded-full
-      w-1.5 h-1.5 my-5;
+  .centerize {
+    @apply flex content-center justify-center;
+    .slide-container {
+      @apply bg-cover bg-center bg-opacity-10 relative z-20;
+
+      .slide-img {
+        @apply w-full  max-w-[338px] max-h-[338px] h-screen mx-auto;
+
+        .img {
+          @apply bg-contain bg-no-repeat bg-center
+        w-full h-full;
+        }
+      }
+
+      .slide-contents {
+        @apply border-red-600 border-2;
+
+        .texts {
+          &.more-details {
+          }
+
+          .title {
+            @apply font-outlined;
+          }
+          .subtitle {
+            @apply font-bold;
+          }
+          .description {
+          }
+        }
+        button.more {
+          .svg {
+          }
+        }
+
+        .arrows {
+          .svg {
+          }
+          .left {
+          }
+          .right {
+          }
+        }
+      }
     }
+
+    /* extras */
+    .line-square {
+      @apply absolute right-4 top-5;
+      .line {
+        @apply relative w-[1px] h-[170px] bg-gradient-to-t from-orange to-transparent;
+
+        span.square {
+          @apply absolute w-[7px] h-[7px] bg-orange
+        -bottom-6
+        left-1/2 -translate-x-1/2
+        rotate-45;
+        }
+      }
+    }
+    .dots {
+      @apply absolute right-5 bottom-4;
+      .dot {
+        @apply bg-orange rounded-full
+      w-1.5 h-1.5 my-5;
+      }
+    }
+    /*--------*/
   }
 }

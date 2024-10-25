@@ -109,4 +109,11 @@
       }
     }
   }
+  .show-all {
+    @extend .btn-2-orange;
+    @apply flex justify-center mx-auto lg:hidden 
+    text-center
+    min-w-[212px] font-bold
+    my-5;
+  }
 }

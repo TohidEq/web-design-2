@@ -85,42 +85,42 @@
         "img": "/images/heroes/cards/hero-card-6.jpg"
       }
     ],
-    "more_detailed": "more detailed",
+    "more_detailed": "plus détaillé",
     "slides": [
       {
         "title": "Gorgomath",
         "subtitle": "Terreur Inconnue",
         "description": "Dans les sombres gouffres du Monde Souterrain, là où la lumière craint de s'aventurer, Gorgomath est né du chaos d'une magie débridée et des vestiges de créatures oubliées. Une créature de cauchemar, Gorgomath rôde sur les champs de bataille, cherchant à imposer la terreur du Monde Souterrain sur le monde des vivants. À chaque bataille, il devient plus fort, se nourrissant de la peur et du désespoir de ses ennemis.",
         "img": "/images/heroes/slides/hero-1.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-1.jpg"
+        "img_bg": "/images/heroes/slides/wallpaper-1.jpg"
       },
       {
         "title": "Sylvanthea",
         "subtitle": "Gardienne de la Forêt Enchantée",
         "description": "Sylvanthea, un esprit aussi ancien que la forêt elle-même, veille sur la Forêt Enchantée depuis des siècles. Née du cœur de l'arbre le plus vieux et nourrie par la magie de la terre, elle incarne la tranquillité et la résilience de la nature. Sylvanthea se tient comme la gardienne contre ceux qui cherchent à nuire à l'équilibre naturel, utilisant ses pouvoirs pour guérir et protéger son domaine.",
         "img": "/images/heroes/slides/hero-2.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-2.jpg"
+        "img_bg": "/images/heroes/slides/wallpaper-2.jpg"
       },
       {
         "title": "Oculothorax",
         "subtitle": "Terreur Visionnaire",
         "description": "Oculothorax, la Terreur Visionnaire, est une créature de cauchemar, inspirée par les créatures étranges du Labyrinthe de Pan. Ce héros, avec un visage sans yeux et des yeux sur les paumes de ses mains, incarne l'essence du fantastique sombre et de la terreur. Errant dans les royaumes d'ombre, Oculothorax voit tout, utilisant ses mains-yeux pour scruter à la fois les mondes physique et spirituel. Son corps allongé et tordu se meut avec une grâce surnaturelle, instillant la terreur dans le cœur de ceux qui le rencontrent. Oculothorax n'est pas seulement une créature d'horreur, mais aussi un gardien de secrets mystiques anciens, caché dans les endroits où la réalité se plie.",
         "img": "/images/heroes/slides/hero-3.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-3.jpg"
+        "img_bg": "/images/heroes/slides/wallpaper-3.jpg"
       },
       {
         "title": "Vorix",
         "subtitle": "Tisseur de Cauchemars",
         "description": "Le Tisseur de Cauchemars est l'incarnation de la peur et du dégoût, un être si grotesque que sa simple présence déforme le tissu de la réalité. Avec un corps qui horrifie les sens, le ventre distendu et pourrissant de Vorix, ses jambes maigres et tordues de manière anormale, et sa tête cauchemardesque de rat le distinguent comme une créature des ténèbres et du désespoir. Ses yeux, remplis d'une lueur malveillante, et sa gueule aux dents effilées parlent d'une faim pour la souffrance et le chaos.",
         "img": "/images/heroes/slides/hero-4.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-4.jpg"
+        "img_bg": "/images/heroes/slides/wallpaper-4.jpg"
       },
       {
         "title": "Lien de la Nature",
         "subtitle": "Gardien Sauvage",
         "description": "Autrefois un simple gardien des anciennes forêts, Lien de la Nature s'est transformé en une entité redoutable, incarnant la puissance sauvage de la nature pour se défendre contre les forces obscures. Une figure imposante, ressemblant à une fusion d'éléments naturels comme le bois noueux, la mousse et les vignes vivantes. Ses yeux brillent comme des feuilles d'émeraude, et il se déplace avec la grâce d'un prédateur. Sa présence est marquée par le bruissement des feuilles et le murmure du vent.",
         "img": "/images/heroes/slides/hero-5.png",
-        "img_bg": "/images/heroes/slides/wallpapaer-5.jpg"
+        "img_bg": "/images/heroes/slides/wallpaper-5.jpg"
       }
     ]
   },

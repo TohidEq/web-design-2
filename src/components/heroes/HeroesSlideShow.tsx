@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { FaArrowRight as FaArrowRightLite } from "react-icons/fa6";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import Image from "next/image";
 
 type Props = {
   moreDetailed: LangsDict["heroes"]["more_detailed"];
@@ -29,11 +32,53 @@ function HeroesSlideShow({ moreDetailed, slides }: Props) {
     </div>
   );
 
+  const [slideNumber, setSlideNumber] = useState(0);
+  const allSlidesNumber = slides.length - 1;
+  const nextSlide = () => {
+    if (slideNumber + 1 > allSlidesNumber) setSlideNumber(0);
+    else setSlideNumber(slideNumber + 1);
+  };
+  const prevSlide = () => {
+    if (slideNumber - 1 < 0) setSlideNumber(allSlidesNumber);
+    else setSlideNumber(slideNumber - 1);
+  };
+
+  const [moreDetails, setMoreDetails] = useState(false);
+
   return (
-    <div className="heroes-slides ">
-      HeroesSlideShow
-      <div className="test">{dots}</div>
-      <div className="test2">{lineAndSquare}</div>
+    <div className="heroes-slides">
+      <div
+        className="slide-bg"
+        style={{ backgroundImage: `url("${slides[slideNumber].img_bg}")` }}
+      ></div>
+      <div className="centerize">
+        <div className="slide-container">
+          <div className="slide-img">
+            <div
+              className="img"
+              style={{ backgroundImage: `url("${slides[slideNumber].img}")` }}
+            ></div>
+          </div>
+          <div className="slide-contents">
+            <div className={`texts ${moreDetails ? "more-details" : ""}`}>
+              <h3 className="title">{slides[slideNumber].title}</h3>
+              <span className="subtitle">{slides[slideNumber].subtitle}</span>
+              <p className="description">{slides[slideNumber].description}</p>
+            </div>
+
+            <button className="more" onClick={() => setMoreDetails(true)}>
+              {moreDetailed} <FaArrowRightLite className="svg" />
+            </button>
+
+            <div className="arrows">
+              <FaArrowLeft className="svg left" onClick={() => prevSlide()} />
+              <FaArrowRight className="svg right" onClick={() => nextSlide()} />
+            </div>
+          </div>
+        </div>
+        {dots}
+        {lineAndSquare}
+      </div>
     </div>
   );
 }
