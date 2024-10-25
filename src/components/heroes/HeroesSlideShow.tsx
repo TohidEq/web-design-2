@@ -51,7 +51,8 @@ function HeroesSlideShow({ moreDetailed, slides }: Props) {
         className="slide-bg"
         style={{ backgroundImage: `url("${slides[slideNumber].img_bg}")` }}
       ></div>
-      <div className="centerize">
+      <div className={`centerize ${!moreDetails && "container mx-auto"}`}>
+        {dots}
         <div className="slide-container">
           <div className="slide-img">
             <div
@@ -60,13 +61,23 @@ function HeroesSlideShow({ moreDetailed, slides }: Props) {
             ></div>
           </div>
           <div className="slide-contents">
-            <div className={`texts ${moreDetails ? "more-details" : ""}`}>
-              <h3 className="title">{slides[slideNumber].title}</h3>
-              <span className="subtitle">{slides[slideNumber].subtitle}</span>
-              <p className="description">{slides[slideNumber].description}</p>
+            <div
+              className={`texts ${
+                moreDetails ? "more-details" : "less-details"
+              }`}
+              onClick={() => setMoreDetails(false)}
+            >
+              <div className="texts-container">
+                <h3 className="title">{slides[slideNumber].title}</h3>
+                <span className="subtitle">{slides[slideNumber].subtitle}</span>
+                <p className="description">{slides[slideNumber].description}</p>
+              </div>
             </div>
 
-            <button className="more" onClick={() => setMoreDetails(true)}>
+            <button
+              className={`more ${moreDetails && "hide"}`}
+              onClick={() => setMoreDetails(true)}
+            >
               {moreDetailed} <FaArrowRightLite className="svg" />
             </button>
 
@@ -76,9 +87,8 @@ function HeroesSlideShow({ moreDetailed, slides }: Props) {
             </div>
           </div>
         </div>
-        {dots}
-        {lineAndSquare}
       </div>
+      {lineAndSquare}
     </div>
   );
 }
